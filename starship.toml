@@ -1,0 +1,164 @@
+# Don't print a new line at the start of the prompt
+add_newline = true
+scan_timeout = 10
+prompt_order = [
+    "username",
+    "hostname",
+    "kubernetes",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "docker_context",
+    "package",
+    "elixir",
+    "elm",
+    "haskell",
+    "java",
+    "julia",
+    "nodejs",
+    "python",
+    "rust",
+    "conda",
+    "crystal",
+    "cmd_duration",
+    "line_break",
+    "env_var",
+    "directory",
+    "character",
+]
+
+[crystal]
+symbol = "✨ "
+style = "bold blue"
+
+[julia]
+symbol = "∴ "
+
+[nodejs]
+symbol = "🤖 "
+
+
+[directory]
+truncation_length = 15
+style = "bold yellow"
+truncate_to_repo= true
+
+[git_branch]
+symbol = "⸙ "
+truncation_length = 35
+truncation_symbol = "~~~"
+style = "bold white"
+
+[git_commit]
+disabled = false
+commit_hash_length = 7
+style = "bold red"
+
+[git_state]
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
+
+[git_status]
+conflicted = "🏳"
+ahead = "ﰾ"
+behind = "ﱲ"
+diverged = "😵"
+untracked = "ﰚ"
+stashed = "ﰤ"
+modified = "ﲃ"
+staged.value = "ﰂ++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = "ﱏ"
+deleted = "🗑"
+
+
+[jobs]
+symbol = "+ "
+threshold = 4
+
+
+[kubernetes]
+symbol = "ﱃ "
+style = "dim green"
+disabled = false
+
+[line_break]
+disabled = false
+
+[hostname]
+ssh_only = false
+style = "bold yellow"
+prefix = "〖"
+suffix = "〗"
+trim_at = ".io"
+disabled = false
+
+[username]
+disabled = false
+style_root = "bold red"
+style_user = "bold yellow"
+show_always = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "››❯"    # The "symbol" segment is being set to "➜"
+error_symbol = "☠"
+use_symbol_for_status = true
+vicmd_symbol = "❮‹‹"
+style_success = "bold green"
+style_failure = "bold yellow"
+
+[cmd_duration]
+min_time = 4
+
+[conda]
+style = "dimmed white"
+
+[battery]
+full_symbol = "⛃"
+charging_symbol = "⛂"
+discharging_symbol = "ﰏ"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 100
+style = "bold green"
+
+[python]
+symbol = "🐍 "
+pyenv_version_name = true
+pyenv_prefix = "ver "
+
+[rust]
+symbol = "⚙ "
+
+[java]
+symbol = "♨ "
+
+[time]
+disabled = false
+format = " %T "
+utc_time_offset = -5
+style = "bold dimmed white"
+
+[memory_usage]
+show_percentage = true
+show_swap = true
+threshold = -1
+symbol = "♲ "
+style = "bold dimmed green"
+disabled = false

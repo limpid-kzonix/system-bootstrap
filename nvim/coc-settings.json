@@ -1,0 +1,41 @@
+{
+    "suggest.timeout": 500,
+    "diagnostic.enableSign": true,
+    "diagnostic.enableHighlightLineNumber": true,
+    "diagnostic.locationlist": true,
+    "diagnostic.errorSign": "!!",
+    "diagnostic.warningSign": "⚠",
+    "diagnostic.infoSign": ">>",
+    "diagnostic.hintSign": ">>",
+    "codeLens.enable": true,
+    "codeLens.separator": "*",
+    "list.maxPreviewHeight": 20,
+    "coc.preferences.useQuickfixForLocations": true,
+    "coc.preferences.rootPatterns": [".git"],
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+
+    "coc.preferences.colorSupport": true,
+    "suggest.enablePreview": true,
+    "diagnostic.checkCurrentLine": true,
+    "eslint.autoFixOnSave": true,
+    "javascript.format.enabled": true,
+    "javascript.showUnused": true,
+	"coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "prettier.requireConfig": true,
+    "languageserver": {
+    	"bash": {
+		    "command": "bash-language-server",
+		    "args": ["start"],
+		    "filetypes": ["sh"],
+		    "ignoredRootPaths": ["~"]
+    	}
+  	}
+}

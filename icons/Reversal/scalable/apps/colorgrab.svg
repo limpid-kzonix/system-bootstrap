@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <filter id="filter2761" x="-.024" y="-.024" width="1.048" height="1.048" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.14552168"/>
+  </filter>
+  <linearGradient id="linearGradient924-1" x1="15.286" x2="1.9546" y1="281.71" y2="295.04" gradientTransform="translate(-.13211 -280)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#b950fa" offset="0"/>
+   <stop stop-color="#32b4fa" offset=".32382"/>
+   <stop stop-color="#f03c8c" offset=".71294"/>
+   <stop stop-color="#ff7832" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path d="m10.708 1.1905c4.405 0 5.0345 0.67282 5.0345 5.388v3.7761c0 4.7152-0.62954 5.388-5.0345 5.388h-4.4832c-4.405 0-5.0346-0.6728-5.0346-5.388v-3.7761c0-4.7152 0.62954-5.388 5.0346-5.388z" enable-background="new" fill="#141414" filter="url(#filter2761)" opacity=".3"/>
+ <path d="m10.708 1.1162c4.405 0 5.0345 0.67282 5.0345 5.388v3.7761c0 4.7152-0.62954 5.388-5.0345 5.388h-4.4832c-4.405 0-5.0346-0.6728-5.0346-5.388v-3.7761c0-4.7152 0.62954-5.388 5.0346-5.388z" enable-background="new" fill="url(#linearGradient924-1)"/>
+ <g transform="matrix(.87798 0 0 .87798 -.96045 -.96033)" color="#000000" fill="#fff" style="paint-order:fill markers stroke">
+  <path transform="matrix(.30135 0 0 .30135 1.0939 1.0938)" d="m31.996 17.365 0.003906 0.003907a14.634 14.634 0 0 0-0.47852 0.017578c-0.026547-0.003319-0.050212-0.017578-0.080078-0.017578h-13.479a0.58404 0.58404 0 0 0-0.58398 0.58008v13.705a14.634 14.634 0 0 0-0.017578 0.3457 14.634 14.634 0 0 0 14.635 14.635 14.634 14.634 0 0 0 14.635-14.635 14.634 14.634 0 0 0-14.635-14.635zm0.003906 7.1113a7.5228 7.5228 0 0 1 7.5234 7.5234 7.5228 7.5228 0 0 1-7.5273 7.5254 7.5228 7.5228 0 0 1-7.5234-7.5254 7.5228 7.5228 0 0 1 7.5273-7.5234z" stroke-width="3.3184" style="isolation:auto;mix-blend-mode:normal"/>
+  <path d="m10.648 9.855v0.794h-0.794v0.265h0.794l0.017 0.793h0.248v-0.793h0.793l0.017-0.265h-0.81v-0.794z" overflow="visible" style="isolation:auto;mix-blend-mode:normal"/>
+ </g>
+</svg>
