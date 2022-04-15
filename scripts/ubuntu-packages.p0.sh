@@ -34,4 +34,3 @@ sudo apt -y install \
 sudo apt -y install tmux zsh
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
