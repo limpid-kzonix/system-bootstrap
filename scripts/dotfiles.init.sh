@@ -20,5 +20,6 @@ ln -s $(pwd)/../.files/kitty.conf  ~/.config/kitty/kitty.conf
 rm -rf ~/.hidden
 ln -s $(pwd)/../.files/.hidden  ~/.hidden
 
-rm -rf ~/.config/nvim
-ln -s $(pwd)/../.files/nvim/  ~/.config/
+rm -rf ~/.config/nvim/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim
+ln -s $(pwd)/../.files/nvim/lua/custom/  ~/.config/nvim/lua/
