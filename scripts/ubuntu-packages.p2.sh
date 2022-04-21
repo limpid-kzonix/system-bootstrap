@@ -21,6 +21,7 @@ sudo apt -y install libgmp-dev
 sudo apt -y install libreadline-dev
 sudo apt -y install libz-dev
 sudo apt -y install git wget flex bison gperf cmake ninja-build ccache libffi-dev libssl-dev dfu-util
+sudo apt -y install build-essential libreadline-dev unzip
 
 sudo apt -y autoclean
 sudo apt -y clean

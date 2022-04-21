@@ -7,8 +7,8 @@ local M = {}
 -- example of changing theme:
 
 M.options = {
-    timeoutlen = 800,
-    updatetime = 550
+    timeoutlen = 400,
+    updatetime = 250
 }
 
 M.mappings = {
@@ -20,7 +20,7 @@ M.mappings = {
 }
 
 M.ui = {
-    theme = "doom-chad"
+    theme = "gruvbox"
 }
 
 M.plugins = {

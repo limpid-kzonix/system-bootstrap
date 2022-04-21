@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+rm -rf ~/.zshrc
+ln -s $(pwd)/../.files/.zshrc  ~/.zshrc
+
 rm -rf ~/.config/starship.toml
 ln -s $(pwd)/../.files/starship.toml  ~/.config/starship.toml
 
