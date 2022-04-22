@@ -160,6 +160,8 @@ if [[ $WITH_TMUX = true ]]; then
     fi
 fi
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
 
 
 export NVM_DIR="$HOME/.nvm"

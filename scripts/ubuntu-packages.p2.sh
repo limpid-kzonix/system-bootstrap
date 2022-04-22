@@ -4,9 +4,8 @@ sudo apt -y update
 
 sudo apt -y install -y clang libjpeg-turbo8-dev libjpeg-dev libjpeg9 libjpeg-tools 
 sudo apt -y install stacer
-sudo apt -y install urxvt 
 sudo apt -y install lm-sensors
-sudo apt -y install lm-sensors xsensors fancontrol
+sudo apt -y install lm-sensors xsensors
 sudo apt -y install stress
 sudo apt -y install software-properties-common
 sudo apt -y install sshpass

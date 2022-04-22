@@ -2,7 +2,7 @@
 
 sudo apt update && sudo apt -y upgrade
 
-sudo apt -y install gnome-tweaks net-tools
+sudo apt -y install net-tools
 
 sudo apt -y install ubuntu-restricted-extras
  
@@ -22,6 +22,12 @@ sudo apt -y install \
 
 sudo apt -y install curl wget git zathura mupdf
 
+sudo apt -y install cmake \
+	pkg-config \
+	libfreetype6-dev \
+	libfontconfig1-dev \
+	libxcb-xfixes0-dev libxkbcommon-dev \
+	python3
 
 sudo apt -y install \
 	libssl-dev \
