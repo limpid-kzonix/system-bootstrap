@@ -2,8 +2,6 @@
 
 ## Gnome Extensions
 
-*TODO* Verify rediness for migration to Gnome 41/42
-
 - [gnome-extension-all-ip-addresses@havekes.eu](https://extensions.gnome.org/extension/3994/all-ip-addresses/)
 - [battery-status@atareao.es](https://extensions.gnome.org/extension/3763/battery-status/)
 - [disconnect-wifi@kgshank.net](https://extensions.gnome.org/extension/904/disconnect-wifi/)
