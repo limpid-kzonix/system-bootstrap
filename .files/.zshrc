@@ -137,6 +137,11 @@ alias ls="exa"
 alias lsa="exa -la"
 alias lsda="lsd -la"
 alias lsdar="lsd -laR"
+alias df='df -h'
+alias chmox='chmod +x'
+alias temp='cd $(mktemp -d)'
+
+alias update="sh $HOME/system-update.sh"
 
 export PATH="$PATH:$HOME/.local/bin"
 
