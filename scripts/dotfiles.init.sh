@@ -23,8 +23,12 @@ ln -s $(pwd)/../.files/kitty.conf  ~/.config/kitty/kitty.conf
 rm -rf ~/.hidden
 ln -s $(pwd)/../.files/.hidden  ~/.hidden
 
+
+rm -rf ~/system-update.sh
+ln -s $(pwd)/../.files/system-update.sh ~/system-update.sh
+
 rm -rf ~/.config/nvim/
 rm -rf ~/.local/share/nvim
 rm -rf ~/.cache/nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim
+git clone https://github.com/NvChad/NvChad --depth=1 ~/.config/nvim
 ln -s $(pwd)/../.files/nvim/lua/custom/  ~/.config/nvim/lua/

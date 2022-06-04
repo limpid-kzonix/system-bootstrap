@@ -146,7 +146,7 @@ alias update="sh $HOME/system-update.sh"
 export PATH="$PATH:$HOME/.local/bin"
 
 # >>> coursier install directory >>>
-export PATH="$PATH:/home/limpid/.local/share/coursier/bin"
+export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
 eval "$(starship init zsh)"
 
