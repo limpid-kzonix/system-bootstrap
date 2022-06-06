@@ -145,6 +145,10 @@ alias update="sh $HOME/system-update.sh"
 
 export PATH="$PATH:$HOME/.local/bin"
 
+# >>> nvim install directory >>>
+export PATH="$PATH:$HOME/.apps/nvim-linux64/bin"
+# <<< nvim install directory <<<
+
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<

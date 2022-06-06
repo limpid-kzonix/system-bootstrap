@@ -1,7 +1,7 @@
 -- Just an example, supposed to be placed in /lua/custom/
 local userPlugins = require 'custom.plugins' -- path to table
-local nvimtreeConfigs = require "custom.configs.nvimtree"
-local treesitterConfigs = require "custom.configs.treesitter"
+local nvimtreeConfigs = require "custom.configs.nvimtree-config.init"
+local treesitterConfigs = require "custom.configs.treesitter-config.init"
 
 local M = {}
 

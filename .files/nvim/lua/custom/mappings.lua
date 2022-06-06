@@ -14,9 +14,7 @@ M.metals = {
         [",gr"] = {function()
             vim.lsp.buf.references()
         end, "   lsp references"},
-        [",rn"] = {function()
-            vim.lsp.buf.rename()
-        end, "lsp rename"},
+        [",rn"] = {function() vim.lsp.buf.rename() end, "lsp rename"},
         [",gds"] = {function()
             vim.lsp.buf.document_symbol()
         end, "lsp rename"},
@@ -29,10 +27,16 @@ M.metals = {
         [",sh"] = {function()
             vim.lsp.buf.signature_help()
         end, "lsp rename"},
-        [",fm"] = {"<cmd>lua vim.lsp.buf.format() <CR>"},
-        [",oi"] = {"<cmd> MetalsOrganizeImports <CR>"},
-        [",ca"] = {"<cmd>lua vim.lsp.buf.code_action() <CR>"},
-        [",hw"] = {'<cmd>lua require"metals".hover_worksheet() <CR>'},
+        [",fm"] = {function()
+            vim.lsp.buf.formatting()
+        end, "lsp rename"},
+        [",oi"] = {"<cmd> :MetalsOrganizeImports <CR>"},
+        [",ca"] = {function ()
+            vim.lsp.buf.code_action()
+        end},
+        [",hw"] = {function ()
+            require"metals".hover_worksheet()
+        end},
         ["[da"] = {[[<cmd>lua vim.diagnostic.setqflist() <CR>]]},
         ["[de"] = {[[<cmd>lua vim.diagnostic.setqflist({ severity = "E" }) <CR>]]},
         ["[dw"] = {[[<cmd>lua vim.diagnostic.setqflist({severity = "W" }) <CR>]]},

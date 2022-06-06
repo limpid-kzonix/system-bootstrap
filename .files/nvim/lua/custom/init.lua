@@ -1,3 +1,5 @@
+require("core.utils").load_mappings()
+
 local autocmd = vim.api.nvim_create_autocmd
 local opt = vim.opt
 
