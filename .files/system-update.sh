@@ -1,5 +1,9 @@
-#!/bin/zsh
-
+#!/bin/env zsh
+echo "Initializing user env..."
+source "$HOME/.zshrc"
+echo "\n"
+echo "## shell: $SHELL ##"
+echo "\n"
 echo "------------------------"
 echo "-  Updating system...  -"
 echo "------------------------"
@@ -13,6 +17,12 @@ rustup update
 echo ""
 echo "Updating conda..."
 conda update conda
-source "$HOME/.sdkman/bin/sdkman-init.sh" && echo "Updating SDKMAN"
+
+echo "Updating SDKMAN..."
 sdk update
 sdk upgrade
+
+echo "Updating NVM..."
+nvm install node --reinstall-packages-from=current --latest-npm
+
+

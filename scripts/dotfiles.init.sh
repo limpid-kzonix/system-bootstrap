@@ -27,8 +27,11 @@ ln -s $(pwd)/../.files/.hidden  ~/.hidden
 rm -rf ~/system-update.sh
 ln -s $(pwd)/../.files/system-update.sh ~/system-update.sh
 
+
+echo "Installing neovim..."
+
 rm -rf ~/.config/nvim/
 rm -rf ~/.local/share/nvim
 rm -rf ~/.cache/nvim
-git clone https://github.com/NvChad/NvChad --depth=1 ~/.config/nvim
-ln -s $(pwd)/../.files/nvim/lua/custom/  ~/.config/nvim/lua/
+git clone https://github.com/AstroNvim/AstroNvim --depth=1 ~/.config/nvim
+ln -s $(pwd)/../.files/nvim/lua/custom/  ~/.config/nvim/lua/user

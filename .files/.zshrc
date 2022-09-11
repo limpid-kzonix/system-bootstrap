@@ -131,6 +131,8 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias projects="cd $HOME/Projects"
+alias myubuntu="cd $HOME/Projects/ubuntu-bootstrap"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ls="exa"
@@ -141,13 +143,15 @@ alias df='df -h'
 alias chmox='chmod +x'
 alias temp='cd $(mktemp -d)'
 
-alias update="sh $HOME/system-update.sh"
+alias update="$HOME/./system-update.sh"
 
 export PATH="$PATH:$HOME/.local/bin"
 
 # >>> nvim install directory >>>
 export PATH="$PATH:$HOME/.apps/nvim-linux64/bin"
 # <<< nvim install directory <<<
+
+export PATH="$PATH:$HOME/.apps/lazygit/bin"
 
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
