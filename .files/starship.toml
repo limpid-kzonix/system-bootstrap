@@ -66,10 +66,10 @@ format = """
 
 # Generic prompt configurations
 [character]
-success_symbol = "[⟨≋⟩](fg:#A6A6A6)"
-error_symbol = "[┈⟨✕⟩](fg:#FF6E79)"
-vicmd_symbol = "[┈⟨vi⟩](bold fg:#FF6E79)"
-format = "$symbol"
+success_symbol = "[≋](fg:#A6A6A6)"
+error_symbol = "[✕](fg:#FF6E79)"
+vicmd_symbol = "[<vi>](bold fg:#FF6E79)"
+format = "$symbol "
 
 [line_break]
 disabled = true
