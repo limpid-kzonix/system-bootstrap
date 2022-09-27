@@ -11,6 +11,4 @@ cargo install bingrep -f
 cargo install hx -f
 cargo install bat -f
 cargo install zellij -f
-
-
-
+cargo install nushell -f
