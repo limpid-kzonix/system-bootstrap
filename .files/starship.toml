@@ -3,7 +3,10 @@ add_newline = false
 
 # Order of modules on prompt
 format = """ 
-[╭](bg:none fg:#A6A6A6)[](bg:none fg:#A6A6A6)[ ](bg:#A6A6A6 fg:#A6A6A6)\
+[╭─](bg:none fg:#A6A6A6)[](bg:none fg:#A6A6A6)[ ](bg:#A6A6A6 fg:#A6A6A6)\
+        $username\
+        $hostname\
+        $directory\
         $time\
         $memory_usage\
         $aws\
@@ -57,21 +60,15 @@ format = """
         $shlvl\
         $jobs\
         $cmd_duration\
-        $status\
-        $character
-[┊](bg:none fg:#A6A6A6)
-[╰](bg:none fg:#A6A6A6)[](bg:none fg:#A6A6A6)[ ](bg:#A6A6A6 fg:#A6A6A6)\
-        $username\
-        $hostname\
-        $directory\
-        $character\
+        $status[](bg:none fg:#A6A6A6)
+[╰─┈](bg:none fg:#A6A6A6)$character\
     """
 
 # Generic prompt configurations
 [character]
-success_symbol = "[[](bg:#57686B fg:#A6A6A6)](fg:#57686B)"
-error_symbol = "[[](bg:#FF6E79 fg:#A6A6A6)](fg:#FF6E79)"
-vicmd_symbol = "[[](bg:#545B68 fg:#A6A6A6)[](bg:#A6A6A6 fg:#545B68)](bold bg:#545B68 fg:#FF6E79)"
+success_symbol = "[⟨≋⟩](fg:#A6A6A6)"
+error_symbol = "[┈⟨✕⟩](fg:#FF6E79)"
+vicmd_symbol = "[┈⟨vi⟩](bold fg:#FF6E79)"
 format = "$symbol"
 
 [line_break]
@@ -85,7 +82,7 @@ style = "bg:#e4c180"
 format = '[[](bg:#e4c180 fg:#A6A6A6)$symbol$profile(\($region\))[](bg:#A6A6A6 fg:#e4c180)]($style)'
 
 [battery]
-# disabled = true
+disabled = false
 full_symbol = ""
 charging_symbol = " "
 discharging_symbol = " "
