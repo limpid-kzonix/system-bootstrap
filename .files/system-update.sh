@@ -19,6 +19,7 @@ echo "Updating conda..."
 conda update conda
 
 echo "Updating SDKMAN..."
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk update
 sdk upgrade
 

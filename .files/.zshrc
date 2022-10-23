@@ -29,7 +29,7 @@ ZSH_THEME="robbyrussell"
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 1
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -147,15 +147,44 @@ alias update="$HOME/./system-update.sh"
 
 export PATH="$PATH:$HOME/.local/bin"
 
+
 # >>> nvim install directory >>>
-export PATH="$PATH:$HOME/.apps/nvim-linux64/bin"
+export PATH="$PATH:$HOME/.apps/kubectl/bin"
 # <<< nvim install directory <<<
 
+# >>> nvim install directory >>>
+export PATH="$PATH:$HOME/.apps/neovim/bin"
+# <<< nvim install directory <<<
+
+# >>> lazygit install directory >>>
 export PATH="$PATH:$HOME/.apps/lazygit/bin"
+# <<< lazygit install directory <<<
+
+# >>> dive install directory >>>
+export PATH="$PATH:$HOME/.apps/dive/bin"
+# <<< nvdiveim install directory <<<
+
+# >>> helm install directory >>>
+export PATH="$PATH:$HOME/.apps/helm/bin"
+# <<< helm install directory <<<
+
+# >>> kind install directory >>>
+export PATH="$PATH:$HOME/.apps/kind/bin"
+# <<< kind install directory <<<
+
+# >>> kustomize install directory >>>
+export PATH="$PATH:$HOME/.apps/kustomize/bin"
+# <<< kustomize install directory <<<
+
+# >>> neovide install directory >>>
+export PATH="$PATH:$HOME/.apps/neovide/bin"
+# <<< neovide install directory <<<
 
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
+
+
 eval "$(starship init zsh)"
 
 # User configuration
@@ -174,8 +203,6 @@ if [[ $WITH_TMUX = true ]]; then
 fi
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-
 
 export NVM_DIR="$HOME/.nvm"
 
@@ -197,9 +224,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#ALL CUSTOMIZATIONS THAT IS NOT A PART OF SHARED ZSH CONFIG SHOULD DEFINED HERE 
+[ -f ~/.custom.zsh ] && source ~/.custom.zsh
