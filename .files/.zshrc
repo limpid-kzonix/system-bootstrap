@@ -184,6 +184,10 @@ export PATH="$PATH:$HOME/.apps/neovide/bin"
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
 
+# >>> k9s install directory >>>
+export PATH="$PATH:$HOME/.apps/k9s/bin"
+# <<< k9s install directory <<<
+
 
 eval "$(starship init zsh)"
 

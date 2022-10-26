@@ -4,6 +4,7 @@ DIVE_VERSION=0.10.0
 NEOVIM_VERSION=0.8.0
 LAZYGIT_VERSION=0.35
 KIND_VERSION=0.16.0
+K9S_VERSION=0.26.7
 
 APPS_DIR=${HOME}/.apps
 mkdir -p $APPS_DIR
@@ -83,3 +84,17 @@ chmod +x ${APPS_DIR}/lazygit/bin/lazygit
 ln -sf ${APPS_DIR}/lazygit/bin/lazygit ${APPS_DIR}/lazygit/bin/lzg 
 
 rm -rf ${APPS_DIR}/lazygit/lazygit.tar.gz
+
+
+# ---
+
+mkdir -p $APPS_DIR/k9s/bin
+curl -L -o ${APPS_DIR}/k9s/k9s.tar.gz https://github.com/derailed/k9s/releases/download/v${K9S_VERSION}/k9s_Linux_x86_64.tar.gz
+
+tar -zvxf ${APPS_DIR}/k9s/k9s.tar.gz -C ${APPS_DIR}/k9s/bin/ 1>/dev/null
+chmod +x ${APPS_DIR}/k9s/bin/k9s
+ln -sf ${APPS_DIR}/k9s/bin/k9s ${APPS_DIR}/k9s/bin/lens
+
+rm -rf ${APPS_DIR}/k9s/k9s.tar.gz
+
+
