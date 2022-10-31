@@ -31,7 +31,7 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 185
+    columns: 125
     lines: 45
 
   # Window position (changes require restart)
@@ -62,7 +62,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: none
+  decorations: full
 
   # Background opacity
   #
@@ -98,7 +98,7 @@ window:
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
-  gtk_theme_variant: dark
+  decorations_theme_variant: dark
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -173,12 +173,6 @@ font:
     x: 0
     y: 0
 
-  # Thin stroke font rendering (macOS only)
-  #
-  # Thin strokes are suitable for retina displays, but for non-retina screens
-  # it is recommended to set `use_thin_strokes` to `false`.
-  use_thin_strokes: true
-
   # Use built-in font for box drawing characters.
   #
   # If `true`, Alacritty will use a custom built-in font for box drawing
@@ -187,7 +181,7 @@ font:
   builtin_box_drawing: false
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
 colors:
