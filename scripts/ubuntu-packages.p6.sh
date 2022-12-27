@@ -1,10 +1,8 @@
 #!/usr/bin/env zsh
 
-DIVE_VERSION=0.10.0
-NEOVIM_VERSION=0.8.0
-LAZYGIT_VERSION=0.35
-KIND_VERSION=0.16.0
-K9S_VERSION=0.26.7
+NEOVIM_VERSION=0.8.1
+LAZYGIT_VERSION=0.36.0
+KIND_VERSION=0.17.0
 
 APPS_DIR=${HOME}/.apps
 mkdir -p $APPS_DIR
@@ -41,15 +39,6 @@ chmod +x $APPS_DIR/kustomize/install_kustomize.sh
 $APPS_DIR/kustomize/./install_kustomize.sh $APPS_DIR/kustomize/bin
 rm -rf $APPS_DIR/kustomize/install_kustomize.sh
 
-# ---
-mkdir -p $APPS_DIR/dive/bin
-curl -L -o ${APPS_DIR}/dive/dive.tar.gz https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.tar.gz
-
-tar -zvxf ${APPS_DIR}/dive/dive.tar.gz -C ${APPS_DIR}/dive/bin/ 1>/dev/null
-chmod +x ${APPS_DIR}/dive/bin/dive
-
-rm -rf ${APPS_DIR}/dive/dive.tar.gz
-
 
 # --- 
 rm -rf $APPS_DIR/neovide/
@@ -72,6 +61,11 @@ chmod +x ${APPS_DIR}/neovim/bin/nvim
 ln -sf ${APPS_DIR}/neovim/bin/nvim ${APPS_DIR}/neovim/bin/neovim 
 ln -sf ${APPS_DIR}/neovim/bin/nvim ${APPS_DIR}/neovim/bin/vim 
 
+sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/neovim 
+sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/vim 
+sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/nvim 
+
+
 rm -rf ${APPS_DIR}/neovim/neovim.tar.gz
 rm -rf ${APPS_DIR}/neovim/nvim-linux64/
 
@@ -84,17 +78,5 @@ chmod +x ${APPS_DIR}/lazygit/bin/lazygit
 ln -sf ${APPS_DIR}/lazygit/bin/lazygit ${APPS_DIR}/lazygit/bin/lzg 
 
 rm -rf ${APPS_DIR}/lazygit/lazygit.tar.gz
-
-
-# ---
-
-mkdir -p $APPS_DIR/k9s/bin
-curl -L -o ${APPS_DIR}/k9s/k9s.tar.gz https://github.com/derailed/k9s/releases/download/v${K9S_VERSION}/k9s_Linux_x86_64.tar.gz
-
-tar -zvxf ${APPS_DIR}/k9s/k9s.tar.gz -C ${APPS_DIR}/k9s/bin/ 1>/dev/null
-chmod +x ${APPS_DIR}/k9s/bin/k9s
-ln -sf ${APPS_DIR}/k9s/bin/k9s ${APPS_DIR}/k9s/bin/lens
-
-rm -rf ${APPS_DIR}/k9s/k9s.tar.gz
 
 

@@ -148,9 +148,9 @@ alias update="$HOME/./system-update.sh"
 export PATH="$PATH:$HOME/.local/bin"
 
 
-# >>> nvim install directory >>>
+# >>> kubectl install directory >>>
 export PATH="$PATH:$HOME/.apps/kubectl/bin"
-# <<< nvim install directory <<<
+# <<< kubectl install directory <<<
 
 # >>> nvim install directory >>>
 export PATH="$PATH:$HOME/.apps/neovim/bin"
@@ -159,10 +159,6 @@ export PATH="$PATH:$HOME/.apps/neovim/bin"
 # >>> lazygit install directory >>>
 export PATH="$PATH:$HOME/.apps/lazygit/bin"
 # <<< lazygit install directory <<<
-
-# >>> dive install directory >>>
-export PATH="$PATH:$HOME/.apps/dive/bin"
-# <<< nvdiveim install directory <<<
 
 # >>> helm install directory >>>
 export PATH="$PATH:$HOME/.apps/helm/bin"
@@ -188,6 +184,7 @@ export PATH="$PATH:$HOME/.local/share/coursier/bin"
 export PATH="$PATH:$HOME/.apps/k9s/bin"
 # <<< k9s install directory <<<
 
+export PATH="$PATH:$HOME/.local/bin"
 
 eval "$(starship init zsh)"
 
@@ -215,14 +212,15 @@ export NVM_DIR="$HOME/.nvm"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/limpid/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup_cmd="$HOME/miniconda3/bin/conda shell.zsh hook 2> /dev/null"
+__conda_setup="$(eval $__conda_setup_cmd)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/limpid/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/limpid/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/limpid/miniconda3/bin:$PATH"
+        export PATH="$HOME/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
