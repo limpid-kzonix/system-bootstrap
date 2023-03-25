@@ -79,4 +79,23 @@ ln -sf ${APPS_DIR}/lazygit/bin/lazygit ${APPS_DIR}/lazygit/bin/lzg
 
 rm -rf ${APPS_DIR}/lazygit/lazygit.tar.gz
 
+# ---
+rm -rf $APPS_DIR/neovide/
+mkdir -p $APPS_DIR/neovide/bin
+curl -L -o ${APPS_DIR}/neovide/neovide.tar.gz https://github.com/neovide/neovide/releases/latest/download/neovide.tar.gz
+
+tar -zvxf ${APPS_DIR}/neovide/neovide.tar.gz -C ${APPS_DIR}/neovide/bin/ 1>/dev/null
+chmod +x ${APPS_DIR}/neovide/bin/neovide
+rm -rf ${APPS_DIR}/neovide/neovide.tar.gz
+
+# ---
+mkdir -p $APPS_DIR/k9s/bin
+curl -L -o ${APPS_DIR}/k9s/k9s.tar.gz https://github.com/derailed/k9s/releases/download/v${K9S_VERSION}/k9s_Linux_x86_64.tar.gz
+
+tar -zvxf ${APPS_DIR}/k9s/k9s.tar.gz -C ${APPS_DIR}/k9s/bin/ 1>/dev/null
+chmod +x ${APPS_DIR}/k9s/bin/k9s
+ln -sf ${APPS_DIR}/k9s/bin/k9s ${APPS_DIR}/k9s/bin/lens
+
+rm -rf ${APPS_DIR}/k9s/k9s.tar.gz
+
 
