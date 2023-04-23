@@ -13,6 +13,9 @@ ln -s $(pwd)/../.files/alacritty.yml  ~/.config/alacritty/alacritty.yml
 rm -rf ~/.tmux.conf
 ln -s $(pwd)/../.files/.tmux.conf  ~/.tmux.conf
 
+rm -rf ~/.wezterm.lua
+ln -s $(pwd)/../.files/.wezterm.lua  ~/.wezterm.lua
+
 rm -rf ~/.tmux.conf.local
 ln -s $(pwd)/../.files/.tmux.conf.local  ~/.tmux.conf.local
 
