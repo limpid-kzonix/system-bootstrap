@@ -3,8 +3,6 @@
 sudo apt update && sudo apt -y upgrade
 
 sudo apt -y install net-tools
-
-sudo apt -y install ubuntu-restricted-extras
  
 sudo apt -y install zsh 
 
