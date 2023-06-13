@@ -14,3 +14,5 @@ sudo apt -y install fonts-firacode \
  fonts-cantarell
  
 sudo apt-get install chrome-gnome-shell
+
+sudo apt install libfuse2

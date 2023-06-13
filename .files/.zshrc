@@ -184,6 +184,10 @@ export PATH="$PATH:$HOME/.local/share/coursier/bin"
 export PATH="$PATH:$HOME/.apps/xplr/bin"
 # <<< xplr install directory <<<
 
+# >>> kitty install directory >>>
+export PATH="$PATH:$HOME/.local/kitty.app/bin"
+# <<< kitty install directory <<<
+
 export PATH="$PATH:$HOME/.local/bin"
 
 eval "$(starship init zsh)"
