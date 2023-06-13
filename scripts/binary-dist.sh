@@ -1,12 +1,19 @@
 #!/usr/bin/env zsh
 
-NEOVIM_VERSION=0.8.1
-LAZYGIT_VERSION=0.36.0
-KIND_VERSION=0.17.0
+NEOVIM_VERSION=0.9.1
+LAZYGIT_VERSION=0.38.2
+KIND_VERSION=0.19.0
 
 APPS_DIR=${HOME}/.apps
 mkdir -p $APPS_DIR
 
+
+rm -rf $APPS_DIR/xplr/
+mkdir -p $APPS_DIR/xplr/bin
+curl -L -o ${APPS_DIR}/xplr/xplr-linux.tar.gz https://github.com/sayanarijit/xplr/releases/latest/download/xplr-linux.tar.gz
+tar -zvxf ${APPS_DIR}/xplr/xplr-linux.tar.gz -C ${APPS_DIR}/xplr/bin/ 1>/dev/null
+chmod +x ${APPS_DIR}/xplr/bin/xplr
+rm -rf ${APPS_DIR}/xplr/xplr-linux.tar.gz
 
 # --- 
 rm -rf $APPS_DIR/kind/
@@ -32,7 +39,7 @@ mkdir -p $APPS_DIR/kubectl/bin
 curl -L -o ${APPS_DIR}/kubectl/bin/kubectl "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x ${APPS_DIR}/kubectl/bin/kubectl
 
-# ---
+# ---zp
 mkdir -p $APPS_DIR/kustomize/bin
 curl -L -o $APPS_DIR/kustomize/install_kustomize.sh "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"
 chmod +x $APPS_DIR/kustomize/install_kustomize.sh
@@ -88,14 +95,5 @@ tar -zvxf ${APPS_DIR}/neovide/neovide.tar.gz -C ${APPS_DIR}/neovide/bin/ 1>/dev/
 chmod +x ${APPS_DIR}/neovide/bin/neovide
 rm -rf ${APPS_DIR}/neovide/neovide.tar.gz
 
-# ---
-mkdir -p $APPS_DIR/k9s/bin
-curl -L -o ${APPS_DIR}/k9s/k9s.tar.gz https://github.com/derailed/k9s/releases/download/v${K9S_VERSION}/k9s_Linux_x86_64.tar.gz
-
-tar -zvxf ${APPS_DIR}/k9s/k9s.tar.gz -C ${APPS_DIR}/k9s/bin/ 1>/dev/null
-chmod +x ${APPS_DIR}/k9s/bin/k9s
-ln -sf ${APPS_DIR}/k9s/bin/k9s ${APPS_DIR}/k9s/bin/lens
-
-rm -rf ${APPS_DIR}/k9s/k9s.tar.gz
 
 

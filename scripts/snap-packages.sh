@@ -10,3 +10,8 @@ sudo snap install obs-studio
 
 sudo snap install crystal --classic
 sudo snap install julia --classic
+
+sudo snap install code --classic
+sudo snap install go --classic
+sudo snap install ruby --classic
+sudo snap install flutter --classic

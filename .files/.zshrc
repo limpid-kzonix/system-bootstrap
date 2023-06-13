@@ -180,9 +180,9 @@ export PATH="$PATH:$HOME/.apps/neovide/bin"
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
 
-# >>> k9s install directory >>>
-export PATH="$PATH:$HOME/.apps/k9s/bin"
-# <<< k9s install directory <<<
+# >>> xplr install directory >>>
+export PATH="$PATH:$HOME/.apps/xplr/bin"
+# <<< xplr install directory <<<
 
 export PATH="$PATH:$HOME/.local/bin"
 
