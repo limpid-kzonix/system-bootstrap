@@ -23,8 +23,13 @@ rm -rf ~/.config/kitty/kitty.conf
 mkdir -p ~/.config/kitty/
 ln -s $(pwd)/../.files/kitty.conf  ~/.config/kitty/kitty.conf
 
+rm -rf ~/.config/conda/.condarc
+mkdir -p ~/.config/conda/
+ln -s $(pwd)/../.files/.condarc  ~/.config/conda/.condarc
+
 rm -rf ~/.hidden
 ln -s $(pwd)/../.files/.hidden  ~/.hidden
+
 
 
 rm -rf ~/system-update.sh
