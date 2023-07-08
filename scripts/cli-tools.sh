@@ -11,6 +11,8 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 
 # curl -sSL https://get.haskellstack.org/ | sh
 
+curl -sS https://webinstall.dev/curlie | bash
+
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
 sudo apt-get update

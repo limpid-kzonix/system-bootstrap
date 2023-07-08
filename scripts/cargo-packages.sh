@@ -16,4 +16,5 @@ cargo install just -f
 cargo install sd -f
 cargo install procs -f
 cargo install du-dust -f
+cargo install gping -f
 

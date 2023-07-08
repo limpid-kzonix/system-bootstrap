@@ -142,6 +142,7 @@ alias lsdar="lsd -laR"
 alias df='df -h'
 alias chmox='chmod +x'
 alias temp='cd $(mktemp -d)'
+alias gtop='docker run --rm -it --name gtop --net="host" --pid="host" aksakalli/gtop'
 
 alias update="$HOME/./system-update.sh"
 
@@ -199,12 +200,7 @@ if [[ $WITH_TMUX = true ]]; then
     if [[ $DISPLAY ]]; then
         [[ $- != *i* ]] && return
         if [[ -z "$TMUX" ]] ;then
-            ID="$( tmux ls | grep -vm1 attached | cut -d: -f1 )"
-            if [[ -z "$ID" ]] ;then
-                tmux new-session
-            else
-                tmux attach-session -t "$ID" 
-            fi
+            eval "$(starship init zsh)"
         fi  
     fi
 fi
@@ -241,3 +237,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 #ALL CUSTOMIZATIONS THAT IS NOT A PART OF SHARED ZSH CONFIG SHOULD DEFINED HERE 
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
