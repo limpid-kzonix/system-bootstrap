@@ -149,7 +149,7 @@ format = "([[ ](bg:#FF6E79 fg:#A6A6A6)$read_only[ ](bg:#A6A6A6 fg:#FF6E79)
 "~/Music" = "󰝚 "
 "~/Movies" = "󰎁 "
 "~/Pictures" = " "
-"~/Projects" = " "
+"~/Projects" = " (dev space)󰵮 "
 "~/IdeaProjects" = " "
 "~/Sources" = " "
 "~/Downloads" = "󰉍 "
@@ -157,6 +157,22 @@ format = "([[ ](bg:#FF6E79 fg:#A6A6A6)$read_only[ ](bg:#A6A6A6 fg:#FF6E79)
 "/" = " "
 "docker" = " docker"
 "scala" = " scala"
+"IdeaProjects" = " "
+"frontend" = " "
+"docs" = " "
+"md" = " "
+"dotfiles" = " "
+"scripts" = " "
+"bin" = " "
+"config" = " "
+"configurations" = " "
+"configuration" = " "
+"markdown" = " "
+"js" = " "
+".github" = " "
+"workspace" = " "
+".github/workflows" = " "
+".github/templates" = " "
 
 [docker_context]
 # disabled = true
@@ -205,14 +221,14 @@ symbol = ""
 style = "bg:#96ab5f fg:#111111"
 # truncation_length = 4
 # truncation_symbol = ""
-format = "[[](bg:#96ab5f fg:#A6A6A6) $symbol $branch [](bg:#A6A6A6 fg:#96ab5f)]($style)"
+format = "[[](bg:#96ab5f fg:#A6A6A6)  $symbol $branch [](bg:#A6A6A6 fg:#96ab5f)]($style)"
 
 [git_commit]
 # disabled = true
 style = "bg:#E58F73 fg:#111111"
 commit_hash_length = 4
 # only_detached = true
-format = "[[](bg:#E58F73 fg:#A6A6A6)#$hash[](bg:#A6A6A6 fg:#E58F73)]($style)"
+format = "[[](bg:#E58F73 fg:#A6A6A6) #$hash[](bg:#A6A6A6 fg:#E58F73)]($style)"
 
 [git_state]
 # disabled = true
@@ -239,7 +255,7 @@ renamed = " 󰑕 ${count}"
 modified = " 󱇧 ${count}"
 staged = "  ${count}"
 untracked = "  ${count}"
-format = "([[](bg:#E0B25D fg:#A6A6A6)$stashed$staged$modified$renamed$untracked$deleted$conflicted$ahead_behind[](bg:#A6A6A6 fg:#E0B25D)]($style))"
+format = "([[](bg:#E0B25D fg:#A6A6A6) $stashed$staged$modified$renamed$untracked$deleted$conflicted$ahead_behind[](bg:#A6A6A6 fg:#E0B25D)]($style))"
 
 [golang]
 # disabled = true
