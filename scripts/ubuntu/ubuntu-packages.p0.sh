@@ -6,6 +6,8 @@ sudo apt -y install net-tools
  
 sudo apt -y install zsh 
 
+sudo apt -y install libfuse2
+
 sudo apt -y install \
 	clang \
 	gcc \
