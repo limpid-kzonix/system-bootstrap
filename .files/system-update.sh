@@ -9,8 +9,8 @@ echo "-  Updating system...  -"
 echo "------------------------"
 echo "System info: $(uname -a)"
 echo ""
-echo "Updating system via 'apt'..."
-sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt dist-upgrade
+echo "Updating system via 'dnf'..."
+sudo dnf check-update && sudo dnf upgrade && sudo dnf distro-sync && sudo dnf system-upgrade
 echo ""
 echo "Updating rust toolchain..."
 rustup update

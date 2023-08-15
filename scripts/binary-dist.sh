@@ -3,6 +3,7 @@
 NEOVIM_VERSION=0.9.1
 LAZYGIT_VERSION=0.38.2
 KIND_VERSION=0.19.0
+NEOVIDE_VERSION=0.11.0
 
 APPS_DIR=${HOME}/.apps
 mkdir -p $APPS_DIR
@@ -50,7 +51,7 @@ rm -rf $APPS_DIR/kustomize/install_kustomize.sh
 # --- 
 rm -rf $APPS_DIR/neovide/
 mkdir -p $APPS_DIR/neovide/bin
-curl -L -o ${APPS_DIR}/neovide/neovide.tar.gz https://github.com/neovide/neovide/releases/latest/download/neovide.tar.gz
+curl -L -o ${APPS_DIR}/neovide/neovide.tar.gz https://github.com/neovide/neovide/releases/download/${NEOVIDE_VERSION}/neovide-linux-x86_64.tar.gz
 
 tar -zvxf ${APPS_DIR}/neovide/neovide.tar.gz -C ${APPS_DIR}/neovide/bin/ 1>/dev/null
 chmod +x ${APPS_DIR}/neovide/bin/neovide
@@ -86,14 +87,7 @@ ln -sf ${APPS_DIR}/lazygit/bin/lazygit ${APPS_DIR}/lazygit/bin/lzg
 
 rm -rf ${APPS_DIR}/lazygit/lazygit.tar.gz
 
-# ---
-rm -rf $APPS_DIR/neovide/
-mkdir -p $APPS_DIR/neovide/bin
-curl -L -o ${APPS_DIR}/neovide/neovide.tar.gz https://github.com/neovide/neovide/releases/latest/download/neovide.tar.gz
 
-tar -zvxf ${APPS_DIR}/neovide/neovide.tar.gz -C ${APPS_DIR}/neovide/bin/ 1>/dev/null
-chmod +x ${APPS_DIR}/neovide/bin/neovide
-rm -rf ${APPS_DIR}/neovide/neovide.tar.gz
 
 
 

@@ -71,6 +71,7 @@ zstyle ':omz:update' frequency 1
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	dnf
 	git 
 	vscode 
 	yarn 
