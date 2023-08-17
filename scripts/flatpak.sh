@@ -20,3 +20,5 @@ flatpak install flathub rest.insomnia.Insomnia
 flatpak install flathub io.beekeeperstudio.Studio
 flatpak install flathub io.github.carterbox.Electricity_Clock
 flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub com.redis.RedisInsight
+flatpak install flathub com.sublimemerge.App
