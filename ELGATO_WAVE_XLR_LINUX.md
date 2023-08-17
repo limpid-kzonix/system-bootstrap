@@ -1,4 +1,5 @@
 [regression since 0.3.77: no audio inputs unless manual selection of config profile in pulse audio control](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3445)
+
 similar issue with [regression since 0.3.52: no audio inputs unless manual selection of config profile ("Pro") in pulse audio control](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/2567)
 
 While using Linux (Fedora 38 with PipeWire), I'm encountering a problem with my Elgato Wave XLR (Elgato Wave XLR + Wave DX) microphone. Once the device is connected, it's accurately recognized, but it functions exclusively as an audio output. Unfortunately, the microphone input doesn't operate as expected. Interestingly, I've found that if I access the sound settings and switch to an alternative profile, then switch back to the Elgato profile, the microphone suddenly starts detecting audio input.
