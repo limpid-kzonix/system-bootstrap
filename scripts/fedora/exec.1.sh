@@ -4,7 +4,8 @@ sudo dnf -y install kitty alacritty
 # media
 sudo dnf -y install vlc
 sudo dnf -y install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-sudo dnf -y install lame\* --exclude=lame-devel
+sudo dnf -y install ffmpeg-free
+sudo dnf -y install obs-studio
 sudo dnf group upgrade --with-optional Multimedia
 
 

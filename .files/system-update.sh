@@ -10,14 +10,11 @@ echo "------------------------"
 echo "System info: $(uname -a)"
 echo ""
 echo "Updating system via 'dnf'..."
-sudo dnf check-update && sudo dnf upgrade && sudo dnf distro-sync && sudo dnf system-upgrade
+sudo dnf check-update && sudo dnf upgrade && sudo dnf distro-sync
 echo ""
 echo "Updating rust toolchain..."
 rustup update
 echo ""
-echo "Updating conda..."
-conda update conda
-
 echo "Updating SDKMAN..."
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk update
