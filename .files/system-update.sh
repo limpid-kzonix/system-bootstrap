@@ -10,7 +10,10 @@ echo "------------------------"
 echo "System info: $(uname -a)"
 echo ""
 echo "Updating system via 'dnf'..."
-sudo dnf check-update && sudo dnf upgrade && sudo dnf distro-sync
+sudo dnf check-update -y && sudo dnf upgrade -y && sudo dnf distro-sync -y
+
+flatpak update -y
+
 echo ""
 echo "Updating rust toolchain..."
 rustup update

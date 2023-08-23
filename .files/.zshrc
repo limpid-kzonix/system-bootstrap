@@ -201,7 +201,12 @@ if [[ $WITH_TMUX = true ]]; then
     if [[ $DISPLAY ]]; then
         [[ $- != *i* ]] && return
         if [[ -z "$TMUX" ]] ;then
-            eval "$(starship init zsh)"
+            ID="$( tmux ls | grep -vm1 attached | cut -d: -f1 )"
+            if [[ -z "$ID" ]] ;then
+                tmux new-session
+            else
+                tmux attach-session -t "$ID" 
+            fi
         fi  
     fi
 fi
