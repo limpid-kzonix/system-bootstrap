@@ -7,7 +7,7 @@ mkdir -p $FONT_DIR
 
 echo $FONT_DIR
 
-# git clone https://github.com/ryanoasis/nerd-fonts.git
+git clone https://github.com/ryanoasis/nerd-fonts.git
 
 cd nerd-fonts
 

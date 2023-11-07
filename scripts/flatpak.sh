@@ -13,7 +13,6 @@ flatpak install flathub com.brave.Browser -y
 flatpak install flathub org.onlyoffice.desktopeditors -y
 flatpak install flathub org.kde.krita -y
 flatpak install flathub org.inkscape.Inkscape -y
-flatpak install flathub org.blender.Blender -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub com.getpostman.Postman -y
 flatpak install flathub rest.insomnia.Insomnia -y

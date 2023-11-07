@@ -136,14 +136,16 @@ alias projects="cd $HOME/Projects"
 alias myubuntu="cd $HOME/Projects/ubuntu-bootstrap"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
-alias ls="exa"
-alias lsa="exa -la"
+alias ls="eza"
+alias lsa="eza -la"
 alias lsda="lsd -la"
 alias lsdar="lsd -laR"
 alias df='df -h'
 alias chmox='chmod +x'
 alias temp='cd $(mktemp -d)'
 alias gtop='docker run --rm -it --name gtop --net="host" --pid="host" aksakalli/gtop'
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+
 
 alias update="$HOME/./system-update.sh"
 
@@ -168,6 +170,10 @@ export PATH="$PATH:$HOME/.apps/helm/bin"
 
 # >>> kind install directory >>>
 export PATH="$PATH:$HOME/.apps/kind/bin"
+# <<< kind install directory <<<
+
+# >>> kind install directory >>>
+export PATH="$PATH:$HOME/.apps/zellij/bin"
 # <<< kind install directory <<<
 
 # >>> kustomize install directory >>>

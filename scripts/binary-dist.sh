@@ -1,9 +1,10 @@
 #!/usr/bin/env zsh
 
-NEOVIM_VERSION=0.9.1
-LAZYGIT_VERSION=0.38.2
-KIND_VERSION=0.19.0
-NEOVIDE_VERSION=0.11.0
+NEOVIM_VERSION=0.9.4
+LAZYGIT_VERSION=0.40.2
+KIND_VERSION=0.20.0
+NEOVIDE_VERSION=0.11.2
+ZELLIJ_VERSION=0.39.0
 
 APPS_DIR=${HOME}/.apps
 mkdir -p $APPS_DIR
@@ -22,6 +23,12 @@ mkdir -p $APPS_DIR/kind/bin
 curl -Lo $APPS_DIR/kind/bin/kind https://kind.sigs.k8s.io/dl/v${KIND_VERSION}/kind-linux-amd64
 chmod +x $APPS_DIR/kind/bin/kind
 
+# --- 
+rm -rf $APPS_DIR/zellij/
+mkdir -p $APPS_DIR/zellij/bin
+curl -Lo $APPS_DIR/zellij/zellij.tar.gz https://github.com/zellij-org/zellij/releases/download/v${ZELLIJ_VERSION}/zellij-aarch64-unknown-linux-musl.tar.gz
+tar -zvxf $APPS_DIR/zellij/zellij.tar.gz -C ${APPS_DIR}/zellij/bin/ 1>/dev/null
+chmod +x $APPS_DIR/zellij/bin/zellij
 
 # ---
 rm -rf $APPS_DIR/helm/
@@ -40,7 +47,7 @@ mkdir -p $APPS_DIR/kubectl/bin
 curl -L -o ${APPS_DIR}/kubectl/bin/kubectl "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x ${APPS_DIR}/kubectl/bin/kubectl
 
-# ---zp
+# ---
 mkdir -p $APPS_DIR/kustomize/bin
 curl -L -o $APPS_DIR/kustomize/install_kustomize.sh "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"
 chmod +x $APPS_DIR/kustomize/install_kustomize.sh
