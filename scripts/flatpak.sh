@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 flatpak install flathub org.telegram.desktop -y
-flatpak install flathub com.sublimetext.three -y
 flatpak install flathub org.gnome.Builder -y
 flatpak install flathub org.mozilla.Thunderbird -y
 flatpak install flathub eu.betterbird.Betterbird -y
@@ -22,9 +21,9 @@ flatpak install flathub com.redis.RedisInsight -y
 flatpak install flathub com.sublimemerge.App -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub com.github.tchx84.Flatseal -y
-flatpak install flathub org.onlyoffice.desktopeditors -y
 flatpak install flathub org.kde.kdenlive -y
 flatpak install flathub org.kde.krita -y
 flatpak install flathub io.github.giantpinkrobots.flatsweep -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub org.wireshark.Wireshark -y
+flatpak install flathub im.riot.Riot -y
