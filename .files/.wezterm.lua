@@ -13,7 +13,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.font = wezterm.font 'FuraMono Nerd Font Mono'
+config.font = wezterm.font 'FiraCode Nerd Font'
 config.color_scheme = 'Grandshell (terminal.sexy)'
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 config.set_environment_variables = {
