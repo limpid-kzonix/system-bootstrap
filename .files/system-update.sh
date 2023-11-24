@@ -8,9 +8,14 @@ echo "------------------------"
 echo "-  Updating system...  -"
 echo "------------------------"
 echo "System info: $(uname -a)"
-echo ""
+echo "\n"
 echo "Updating system via 'dnf'..."
-sudo dnf check-update -y && sudo dnf upgrade -y && sudo dnf distro-sync -y
+sudo dnf check-update -y
+sudo dnf update -y
+sudo dnf check-update -y 
+echo "Upgrading system via 'dnf'..."
+sudo dnf upgrade -y 
+sudo dnf distro-sync -y
 
 flatpak update -y
 
