@@ -6,9 +6,11 @@ ln -s $(pwd)/../.files/.zshrc  ~/.zshrc
 rm -rf ~/.config/starship.toml
 ln -s $(pwd)/../.files/starship.toml  ~/.config/starship.toml
 
-rm -rf ~/.config/alacritty/alacritty.yml
+rm -rf ~/.config/alacritty/alacritty.toml
+rm -rf ~/.config/alacritty/theme.toml
 mkdir -p ~/.config/alacritty/
-ln -s $(pwd)/../.files/alacritty.yml  ~/.config/alacritty/alacritty.yml
+ln -s $(pwd)/../.files/alacritty.toml  ~/.config/alacritty/alacritty.toml
+ln -s $(pwd)/../.files/alacritty_theme.toml  ~/.config/alacritty/theme.toml
 
 rm -rf ~/.tmux.conf
 ln -s $(pwd)/../.files/.tmux.conf  ~/.tmux.conf
