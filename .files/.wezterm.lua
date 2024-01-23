@@ -14,8 +14,7 @@ end
 
 -- For example, changing the color scheme:
 config.font = wezterm.font 'FiraCode Nerd Font'
-config.color_scheme = 'Grandshell (terminal.sexy)'
-config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
+-- config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 config.set_environment_variables = {
   -- This changes the default prompt for cmd.exe to report the
   -- current directory using OSC 7, show the current time and
@@ -24,7 +23,7 @@ config.set_environment_variables = {
 }
 
 -- Spawn a fish shell in login mode
-config.default_prog = { 'zellij' }
+-- config.default_prog = { 'zellij' }
 
 
 
