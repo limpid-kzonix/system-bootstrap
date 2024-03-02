@@ -5,8 +5,6 @@ sudo dnf -y install alacritty
 sudo dnf -y install vlc
 sudo dnf -y install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf -y install ffmpeg-free
-# sudo dnf group upgrade --with-optional Multimedia
-
 
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
