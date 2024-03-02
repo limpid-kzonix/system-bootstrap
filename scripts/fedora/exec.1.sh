@@ -7,6 +7,19 @@ sudo dnf -y install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-o
 sudo dnf -y install ffmpeg-free
 # sudo dnf group upgrade --with-optional Multimedia
 
+
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+
+# hardware codecs for AMD
+sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
+sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+
+sudo dnf install libva libva-utils gstreamer1-vaapi ffmpeg mesa-dri-drivers mpv
+sudo dnf install radeontop
+sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utils
+
+
 #ui
 sudo dnf -y install gnome-tweaks gnome-extensions-app
 
