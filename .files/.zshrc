@@ -199,6 +199,7 @@ export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
+export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/apps"
 
 eval "$(starship init zsh)"
 
