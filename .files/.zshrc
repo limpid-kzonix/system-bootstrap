@@ -152,6 +152,10 @@ alias update="$HOME/./system-update.sh"
 export PATH="$PATH:$HOME/.local/bin"
 
 
+# >>> minikube install directory >>>
+export PATH="$PATH:$HOME/.apps/minikube/bin"
+# <<< minikube install directory <<<
+
 # >>> kubectl install directory >>>
 export PATH="$PATH:$HOME/.apps/kubectl/bin"
 # <<< kubectl install directory <<<
