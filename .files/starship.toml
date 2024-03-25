@@ -156,7 +156,7 @@ format = "([[ ](bg:#FF6E79 fg:#A6A6A6)$read_only[ ](bg:#A6A6A6 fg:#FF6E79)
 "~" = "󰠦 "
 "/" = " "
 "docker" = " docker"
-"scala" = " scala"
+"scala" = "  scala"
 "IdeaProjects" = " "
 "frontend" = " "
 "docs" = " "
@@ -351,7 +351,9 @@ display_private = false
 format = "[[](bg:#545B68 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#545B68)]($style)"
 
 [scala]
-symbol = ''
+symbol = ' '
+style = "bg:#f43434 fg:#333333 bold"
+format = "[[](bg:#f43434 fg:#A6A6A6) $symbol$version [](bg:#A6A6A6 fg:#f43434)]($style)"
 
 [perl]
 # disabled = true
