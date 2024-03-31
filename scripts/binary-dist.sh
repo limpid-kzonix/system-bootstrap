@@ -7,8 +7,8 @@ NEOVIDE_VERSION=0.12.2
 ZELLIJ_VERSION=0.39.2
 
 APPS_DIR=${HOME}/.apps
-mkdir -p $APPS_DIR
 
+mkdir -p $APPS_DIR
 
 # ---
 echo "Installing minikube"

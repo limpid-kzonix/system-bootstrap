@@ -152,6 +152,11 @@ alias update="$HOME/./system-update.sh"
 export PATH="$PATH:$HOME/.local/bin"
 
 
+
+# >>> go install directory >>>
+export PATH="$PATH:$HOME/.go/bin"
+# <<< go install directory <<<
+
 # >>> minikube install directory >>>
 export PATH="$PATH:$HOME/.apps/minikube/bin"
 # <<< minikube install directory <<<
@@ -199,6 +204,12 @@ export PATH="$PATH:$HOME/.apps/xplr/bin"
 # >>> kitty install directory >>>
 export PATH="$PATH:$HOME/.local/kitty.app/bin"
 # <<< kitty install directory <<<
+
+# >>> platformio install directory >>>
+export PATH="$PATH:$HOME/.platformio/penv/bin"
+# <<< platformio install directory <<<
+
+
 
 export PATH="$PATH:$HOME/.local/bin"
 
