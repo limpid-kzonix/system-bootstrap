@@ -216,6 +216,9 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/apps"
 
+export PATH="$PATH:$HOME/.local/share/flatpak/exports/bin"
+export PATH="$PATH:$HOME/.platformio/penv/bin"
+
 eval "$(starship init zsh)"
 
 # User configuration

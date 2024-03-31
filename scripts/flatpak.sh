@@ -27,3 +27,4 @@ flatpak install flathub io.github.giantpinkrobots.flatsweep -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub org.wireshark.Wireshark -y
 flatpak install flathub im.riot.Riot -y
+flatpak install flathub org.wezfurlong.wezterm -y
