@@ -48,3 +48,7 @@ cd nerd-fonts
 ./install.sh -U Inconsolata
 
 sudo fc-cache -vf
+
+cd ..
+
+rm -rf nerd-fonts
