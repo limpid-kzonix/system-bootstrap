@@ -20,11 +20,16 @@ flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub com.redis.RedisInsight -y
 flatpak install flathub com.sublimemerge.App -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
+
 flatpak install flathub com.github.tchx84.Flatseal -y
+flatpak install flathub io.github.giantpinkrobots.flatsweep -y
+flatpak install flathub io.github.flattool.Warehouse -y
+
 flatpak install flathub org.kde.kdenlive -y
 flatpak install flathub org.kde.krita -y
-flatpak install flathub io.github.giantpinkrobots.flatsweep -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub org.wireshark.Wireshark -y
 flatpak install flathub im.riot.Riot -y
 flatpak install flathub org.wezfurlong.wezterm -y
+flatpak install flathub network.loki.Session -y
+flatpak install flathub net.nokyan.Resources -y
