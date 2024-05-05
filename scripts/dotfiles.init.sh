@@ -1,5 +1,15 @@
 #!/usr/bin/env zsh
 
+
+rm -rf ~/.local/share/gnome-background-properties
+mkdir -p ~/.local/share/gnome-background-properties
+ln -s $(pwd)/../.files/gnome-background-properties.xml  ~/.local/share/gnome-background-properties/background-properties.
+
+rm -rf ~/Pictures/Backgrounds
+mkdir -p ~/Pictures/Backgrounds
+# link all files from .assets/Backgrounds to ~/Pictures/Backgrounds
+ln -s $(pwd)/../assets/Backgrounds/*.jpg  ~/Pictures/Backgrounds/
+
 rm -rf ~/.zshrc
 ln -s $(pwd)/../.files/.zshrc  ~/.zshrc
 
