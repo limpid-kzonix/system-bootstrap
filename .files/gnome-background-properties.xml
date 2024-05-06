@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Default Background</name>
-    <filename>~/Pictures/Backgrounds/light.jpg</filename>
-    <filename-dark>~/Pictures/Backgrounds/dark.jpg</filename-dark>
+    <filename>/home/worxbend/Pictures/Backgrounds/light.jpg</filename>
+    <filename-dark>/home/worxbend/Pictures/Backgrounds/dark.jpg</filename-dark>
     <options>zoom</options>
     <shade_type>solid</shade_type>
     <pcolor>#3071AE</pcolor>

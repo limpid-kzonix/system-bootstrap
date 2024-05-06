@@ -3,7 +3,7 @@
 
 rm -rf ~/.local/share/gnome-background-properties
 mkdir -p ~/.local/share/gnome-background-properties
-ln -s $(pwd)/../.files/gnome-background-properties.xml  ~/.local/share/gnome-background-properties/background-properties.
+ln -s $(pwd)/../.files/gnome-background-properties.xml  ~/.local/share/gnome-background-properties/adwaita.xml.in
 
 rm -rf ~/Pictures/Backgrounds
 mkdir -p ~/Pictures/Backgrounds
