@@ -7,7 +7,7 @@ ln -s $(pwd)/../.files/gnome-background-properties.xml  ~/.local/share/gnome-bac
 
 rm -rf ~/Pictures/Backgrounds
 mkdir -p ~/Pictures/Backgrounds
-# link all files from .assets/Backgrounds to ~/Pictures/Backgrounds
+
 ln -s $(pwd)/../assets/Backgrounds/*.jpg  ~/Pictures/Backgrounds/
 
 rm -rf ~/.zshrc
