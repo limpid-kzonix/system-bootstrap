@@ -3,13 +3,13 @@
 sudo dnf -y install alacritty
 # media
 sudo dnf -y install vlc
-sudo dnf -y install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf -y install gstreamer1-plugins-{good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 sudo dnf -y install ffmpeg-free
 
 sudo dnf install libva-utils
 sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv
 sudo dnf install radeontop
-sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utils
+sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utilshttps://www.youtube.com/watch?v=69NzEc9RTUs
 
 
 #ui
@@ -39,13 +39,12 @@ sudo dnf install -y v4l2loopback
 sudo dnf install -y obs-studio
 sudo dnf install -y obs-studio-libs
 
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf swap ffmpeg ffmpeg-free --allowerasing
 sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
 # hardware codecs for AMD
-sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
-sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+# sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
+# sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 
 # Hardware codecs with AMD (mesa)
 
@@ -56,8 +55,8 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 
 # If using i686 compat libraries (for steam or alikes):
 
-sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
-sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
+# sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
+# sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 
 sudo dnf install rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
