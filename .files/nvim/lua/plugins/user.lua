@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -23,12 +21,13 @@ return {
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
+        "",
+        " o       o             o                o  ",
+        " |       |             |                |  ",
+        " o   o   o o-o o-o \\ / O-o  o-o o-o   o-O ",
+        "  \\ / \\ /  | | |    o  |  | |-' |  | |  |",
+        "   o   o   o-o o   / \\ o-o  o-o o  o  o-o ",
+        "",
         "    ███    ██ ██    ██ ██ ███    ███",
         "    ████   ██ ██    ██ ██ ████  ████",
         "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
