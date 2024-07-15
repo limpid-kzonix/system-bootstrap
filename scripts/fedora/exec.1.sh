@@ -7,7 +7,7 @@ sudo dnf -y install gstreamer1-plugins-{good-\*,base} gstreamer1-plugin-openh264
 sudo dnf -y install ffmpeg-free
 
 sudo dnf install libva-utils
-sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv
+sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv 
 sudo dnf install radeontop
 sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utilshttps://www.youtube.com/watch?v=69NzEc9RTUs
 
@@ -49,6 +49,8 @@ sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=Pac
 # Hardware codecs with AMD (mesa)
 
 # Using the rpmfusion-free section This is needed since Fedora 37 and later... and mainly concern AMD hardware since NVIDIA hardware with nouveau doesn't work well
+
+sudo dnf install mesa-va-drivers-freeworld -y
 
 sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
