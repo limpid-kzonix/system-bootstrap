@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 
-NEOVIM_VERSION=0.9.5
-LAZYGIT_VERSION=0.40.2
-KIND_VERSION=0.22.0
-NEOVIDE_VERSION=0.12.2
-ZELLIJ_VERSION=0.39.2
+NEOVIM_VERSION=0.10.0
+LAZYGIT_VERSION=0.43.1
+KIND_VERSION=0.23.0
+NEOVIDE_VERSION=0.13.1
+ZELLIJ_VERSION=0.40.1
 
 APPS_DIR=${HOME}/.apps
 
@@ -56,12 +56,14 @@ rm ${APPS_DIR}/helm/get_helm.sh
  
 # ---
 echo "Installing kubectl"
+rm -rf $APPS_DIR/kubectl/
 mkdir -p $APPS_DIR/kubectl/bin
 curl -L -o ${APPS_DIR}/kubectl/bin/kubectl "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x ${APPS_DIR}/kubectl/bin/kubectl
 
 # ---
 echo "Installing kustomize"
+rm -rf $APPS_DIR/kustomize/
 mkdir -p $APPS_DIR/kustomize/bin
 curl -L -o $APPS_DIR/kustomize/install_kustomize.sh "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"
 chmod +x $APPS_DIR/kustomize/install_kustomize.sh
