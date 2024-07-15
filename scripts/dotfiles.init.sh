@@ -49,15 +49,15 @@ ln -s $(pwd)/../.files/system-update.sh ~/system-update.sh
 
 echo "Installing neovim..."
 
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
+# mv ~/.local/share/nvim ~/.local/share/nvim.bak
+# mv ~/.local/state/nvim ~/.local/state/nvim.bak
+# mv ~/.cache/nvim ~/.cache/nvim.bak
 
-# rm -rf ~/.config/nvim/
-# rm -rf ~/.local/share/nvim
-# rm -rf ~/.local/state/nvim
-# rm -rf ~/.cache/nvim
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
 
-git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
-# remove template's git connection to set up your own later
-rm -rf ~/.config/nvim/.git
+ln -s $(pwd)/../.files/nvim/ ~/.config/nvim
+
+echo "Installed neovim."
