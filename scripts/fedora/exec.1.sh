@@ -9,7 +9,7 @@ sudo dnf -y install ffmpeg-free
 sudo dnf install libva-utils
 sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv 
 sudo dnf install radeontop
-sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utilshttps://www.youtube.com/watch?v=69NzEc9RTUs
+sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utils
 
 
 #ui
