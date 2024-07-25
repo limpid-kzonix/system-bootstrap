@@ -8,9 +8,12 @@ sudo dnf -y install ffmpeg-free
 
 sudo dnf install libva-utils
 sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv 
-sudo dnf install radeontop
 sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utils
 
+if lspci | grep -i amd | grep -i vga > /dev/null; then
+    echo "AMD GPU found."
+    sudo dnf install radeontop
+fi
 
 #ui
 sudo dnf -y install gnome-tweaks gnome-extensions-app
