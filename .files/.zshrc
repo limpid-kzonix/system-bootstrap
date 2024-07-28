@@ -219,6 +219,9 @@ export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/apps"
 export PATH="$PATH:$HOME/.local/share/flatpak/exports/bin"
 export PATH="$PATH:$HOME/.platformio/penv/bin"
 
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$PATH:$DENO_INSTALL/bin"
+
 eval "$(starship init zsh)"
 
 # User configuration
