@@ -151,8 +151,6 @@ alias update="$HOME/./system-update.sh"
 
 export PATH="$PATH:$HOME/.local/bin"
 
-
-
 # >>> go install directory >>>
 export PATH="$PATH:$HOME/.go/bin"
 # <<< go install directory <<<
@@ -221,6 +219,10 @@ export PATH="$PATH:$HOME/.platformio/penv/bin"
 
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"
+
+export GOPATH="$HOME/.go-workspace"
+export GOCACHE="$GOPATH/pkg/cache"
+export GOMODCACHE="$GOPATH/pkg/mod"
 
 eval "$(starship init zsh)"
 
