@@ -223,6 +223,7 @@ export PATH="$PATH:$DENO_INSTALL/bin"
 export GOPATH="$HOME/.go-workspace"
 export GOCACHE="$GOPATH/pkg/cache"
 export GOMODCACHE="$GOPATH/pkg/mod"
+export PATH="$PATH:$GOPATH/bin"
 
 eval "$(starship init zsh)"
 

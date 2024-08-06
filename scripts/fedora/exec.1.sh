@@ -65,3 +65,8 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 
 sudo dnf install rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
+
+
+sudo dnf install gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm- -y
+sudo dnf install gtk3-devel -y
+sudo dnf install webkit2gtk4.0-devel -y
