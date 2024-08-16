@@ -3,8 +3,9 @@
 sudo dnf -y install alacritty
 # media
 sudo dnf -y install vlc
-sudo dnf -y install gstreamer1-plugins-{good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-sudo dnf -y install ffmpeg-free
+sudo dnf -y install gstreamer1-plugins-{good-\*,base} gstreamer1-plugin-openh264 --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf -y install ffmpeg --allowerasing
+sudo dnf -y install ffmpeg-devel --allowerasing
 
 sudo dnf install libva-utils
 sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv 
@@ -42,8 +43,12 @@ sudo dnf install -y v4l2loopback
 sudo dnf install -y obs-studio
 sudo dnf install -y obs-studio-libs
 
-sudo dnf swap ffmpeg ffmpeg-free --allowerasing
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+
+
+sudo dnf -y install ffmpeg --allowerasing
+sudo dnf -y install ffmpeg-devel --allowerasing
 
 # hardware codecs for AMD
 # sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
