@@ -19,3 +19,7 @@ sudo systemctl enable containerd.service
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
+
+
+timedatectl set-local-rtc 0
+timedatectl set-ntp true
