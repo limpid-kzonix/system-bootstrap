@@ -8,7 +8,7 @@ sudo dnf -y install ffmpeg --allowerasing
 sudo dnf -y install ffmpeg-devel --allowerasing
 
 sudo dnf install libva-utils
-sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv 
+sudo dnf install libva libva-utils gstreamer1-vaapi mesa-dri-drivers mpv
 sudo dnf install libva-vdpau-driver libvdpau-va-gl libva-utils
 
 if lspci | grep -i amd | grep -i vga > /dev/null; then
@@ -26,7 +26,7 @@ sudo dnf -y install gnome-tweaks gnome-extensions-app
 
 #others
 sudo dnf install -y llvm jq meson g++ gcc clang make cmake
-sudo dnf install -y meson 
+sudo dnf install -y meson
 sudo dnf install -y flex bison gperf cmake ninja-build ccache libffi-devel openssl-devel dfu-util
 sudo dnf install -y build-essential libreadline-dev unzip
 sudo dnf install -y stacer
@@ -59,7 +59,7 @@ sudo dnf -y install ffmpeg-devel --allowerasing
 
 # Using the rpmfusion-free section This is needed since Fedora 37 and later... and mainly concern AMD hardware since NVIDIA hardware with nouveau doesn't work well
 
-sudo dnf install mesa-va-drivers mesa-vdpau-drivers mesa-dri-drivers mesa-filesystem mesa-filesystem mesa-libEGL mesa-libGL mesa-libGL-devel mesa-libgbm mesa-libglapi -y 
+sudo dnf install mesa-va-drivers mesa-vdpau-drivers mesa-dri-drivers mesa-filesystem mesa-filesystem mesa-libEGL mesa-libGL mesa-libGL-devel mesa-libgbm mesa-libglapi -y
 
 sudo dnf install rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
@@ -67,4 +67,5 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 
 sudo dnf install gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm- -y
 sudo dnf install gtk3-devel -y
+sudo dnf install gtk4 gtk4-devel -y
 sudo dnf install webkit2gtk4.0-devel -y
