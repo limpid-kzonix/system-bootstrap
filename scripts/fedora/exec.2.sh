@@ -28,3 +28,6 @@ rm ./get-docker.sh
 sudo systemctl status docker
 sudo systemctl enable docker
 sudo systemctl start docker
+
+timedatectl set-local-rtc 0
+timedatectl set-ntp true

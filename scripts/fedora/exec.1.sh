@@ -16,6 +16,11 @@ if lspci | grep -i amd | grep -i vga > /dev/null; then
     sudo dnf install radeontop
 fi
 
+if lspci | grep -i intel | grep -i vga > /dev/null; then
+    echo "Intel GPU found."
+    sudo dnf install intel-media-driver
+fi
+
 #ui
 sudo dnf -y install gnome-tweaks gnome-extensions-app
 
@@ -50,23 +55,11 @@ sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=Pac
 sudo dnf -y install ffmpeg --allowerasing
 sudo dnf -y install ffmpeg-devel --allowerasing
 
-# hardware codecs for AMD
-# sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
-# sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-
 # Hardware codecs with AMD (mesa)
 
 # Using the rpmfusion-free section This is needed since Fedora 37 and later... and mainly concern AMD hardware since NVIDIA hardware with nouveau doesn't work well
 
-sudo dnf install mesa-va-drivers-freeworld -y
-
-sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
-sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-
-# If using i686 compat libraries (for steam or alikes):
-
-# sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
-# sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
+sudo dnf install mesa-va-drivers mesa-vdpau-drivers mesa-dri-drivers mesa-filesystem mesa-filesystem mesa-libEGL mesa-libGL mesa-libGL-devel mesa-libgbm mesa-libglapi -y 
 
 sudo dnf install rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
