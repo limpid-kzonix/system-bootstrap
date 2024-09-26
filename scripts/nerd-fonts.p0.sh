@@ -7,7 +7,7 @@ mkdir -p $FONT_DIR
 
 echo $FONT_DIR
 
-git clone https://github.com/ryanoasis/nerd-fonts.git
+git clone --depth 1 --filter=blob:none git@github.com:ryanoasis/nerd-fonts
 
 cd nerd-fonts
 
@@ -27,25 +27,23 @@ cd nerd-fonts
 ./install.sh -U DroidSansMono
 ./install.sh -U Monoid
 ./install.sh -U SpaceMono
-./install.sh -U Iosevka
-./install.sh -U InconsolataGo
 ./install.sh -U SourceCodePro
 ./install.sh -U ComicShannsMono
 ./install.sh -U NerdFontsSymbolsOnly
 ./install.sh -U DaddyTimeMono
 ./install.sh -U UbuntuMono
 ./install.sh -U Meslo
-./install.sh -U Cousine
 ./install.sh -U FiraMono
-./install.sh -U IosevkaTerm
 ./install.sh -U CodeNewRoman
 ./install.sh -U CascadiaCode
-./install.sh -U Go-Mono
-./install.sh -U InconsolataLGC
-./install.sh -U Monofur
 ./install.sh -U Hasklig
 ./install.sh -U DejaVuSansMono
 ./install.sh -U Inconsolata
+./install.sh -U Hermit
+./install.sh -U RecMono
+./install.sh -U ZedMono
+./install.sh -U CommitMono
+./install.sh -U Terminus
 
 sudo fc-cache -vf
 
