@@ -45,8 +45,7 @@ sudo dnf install -y fira-code-fonts
 sudo dnf install -y v4l2loopback
 
 
-sudo dnf install -y obs-studio
-sudo dnf install -y obs-studio-libs
+sudo dnf install -y obs-studio obs-studio-libs
 
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf groupupdate multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
@@ -69,3 +68,6 @@ sudo dnf install gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-dev
 sudo dnf install gtk3-devel -y
 sudo dnf install gtk4 gtk4-devel -y
 sudo dnf install webkit2gtk4.0-devel -y
+
+sudo dnf install texlive-base texlive-xetex -y
+sudo dnf install mesa-libOSMesa -y
