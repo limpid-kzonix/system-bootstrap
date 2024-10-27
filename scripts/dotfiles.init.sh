@@ -21,14 +21,17 @@ mkdir -p ~/.config/alacritty/
 ln -s $(pwd)/../.files/alacritty.toml  ~/.config/alacritty/alacritty.toml
 ln -s $(pwd)/../.files/alacritty_theme.toml  ~/.config/alacritty/theme.toml
 
-rm -rf ~/.tmux.conf
-ln -s $(pwd)/../.files/.tmux.conf  ~/.tmux.conf
 
 rm -rf ~/.wezterm.lua
 ln -s $(pwd)/../.files/.wezterm.lua  ~/.wezterm.lua
 
-rm -rf ~/.tmux.conf.local
-ln -s $(pwd)/../.files/.tmux.conf.local  ~/.tmux.conf.local
+#region: TMUX CONFIGURATION
+mkdir -p $HOME/.config/tmux
+rm -rf $HOME/.config/tmux/tmux.conf
+rm -rf $HOME/.tmux.conf
+ln -s $(pwd)/../.files/.tmux.conf $HOME/.config/tmux/tmux.conf
+ln -s $(pwd)/../.files/.tmux.conf $HOME/.tmux.conf
+#endregion
 
 rm -rf ~/.config/kitty/kitty.conf
 mkdir -p ~/.config/kitty/
