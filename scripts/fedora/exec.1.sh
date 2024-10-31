@@ -60,8 +60,8 @@ sudo dnf -y install ffmpeg-devel --allowerasing
 
 sudo dnf install mesa-va-drivers mesa-vdpau-drivers mesa-dri-drivers mesa-filesystem mesa-filesystem mesa-libEGL mesa-libGL mesa-libGL-devel mesa-libgbm mesa-libglapi -y
 
-sudo dnf install rpmfusion-nonfree-release-tainted
-sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
+# sudo dnf install rpmfusion-nonfree-release-tainted
+# sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 
 
 sudo dnf install gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm- -y
