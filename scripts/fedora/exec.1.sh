@@ -72,5 +72,5 @@ sudo dnf install webkit2gtk4.0-devel -y
 sudo dnf install texlive-base texlive-xetex -y
 sudo dnf install mesa-libOSMesa -y
 
-sudo dnf install wl-clipboard -Y
+sudo dnf install wl-clipboard -y
 sudo dnf install yq -y

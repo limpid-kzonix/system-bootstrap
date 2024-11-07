@@ -40,7 +40,6 @@ cd nerd-fonts
 ./install.sh -U DejaVuSansMono
 ./install.sh -U Inconsolata
 ./install.sh -U Hermit
-./install.sh -U RecMono
 ./install.sh -U ZedMono
 ./install.sh -U CommitMono
 ./install.sh -U Terminus
