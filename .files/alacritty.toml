@@ -141,9 +141,9 @@ lines = 55
 x = 3
 y = 3
 
-import = ["~/.config/alacritty/theme.toml"]
-
 [general]
 
 live_config_reload = true
 working_directory = "None"
+
+import = ["~/.config/alacritty/theme.toml"]
