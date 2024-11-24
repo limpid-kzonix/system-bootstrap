@@ -8,7 +8,6 @@ flatpak install flathub com.brave.Browser -y
 flatpak install flathub org.inkscape.Inkscape -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub rest.insomnia.Insomnia -y
-flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 
 flatpak install flathub com.github.tchx84.Flatseal -y
@@ -21,7 +20,4 @@ flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub org.wezfurlong.wezterm -y
 flatpak install flathub network.loki.Session -y
 flatpak install flathub net.nokyan.Resources -y
-
 flatpak install flathub dev.zed.Zed -y
-flatpak install flathub com.bambulab.BambuStudio -y
-flatpak install flathub org.blender.Blender -y

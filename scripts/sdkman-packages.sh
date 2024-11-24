@@ -12,3 +12,4 @@ source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk i scala
 source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk i micronaut
 source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk i vertx
 source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk i visualvm
+
