@@ -18,6 +18,12 @@ flatpak install flathub org.kde.kdenlive -y
 flatpak install flathub org.kde.krita -y
 flatpak install flathub io.missioncenter.MissionCenter -y
 flatpak install flathub org.wezfurlong.wezterm -y
-flatpak install flathub network.loki.Session -y
 flatpak install flathub net.nokyan.Resources -y
 flatpak install flathub dev.zed.Zed -y
+
+flatpak install flathub io.gitlab.liferooter.TextPieces -y
+flatpak install flathub app.devsuite.Ptyxis -y
+flatpak install flathub org.gnome.dspy -y
+flatpak install flathub page.tesk.Refine -y
+
+flatpak install flathub org.kde.audiotube -y
