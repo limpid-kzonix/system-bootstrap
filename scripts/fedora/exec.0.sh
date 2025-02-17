@@ -19,6 +19,5 @@ sudo dnf install zsh fzf git curl wget fuse
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
 # vim /usr/share/wireplumber/main.lua.d/50-alsa-config.lua
 # acp = false
