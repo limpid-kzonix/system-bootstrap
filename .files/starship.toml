@@ -2,6 +2,7 @@
 add_newline = false
 
 # Order of modules on prompt
+command_timeout = 1500
 format = """ 
 [╭─](bg:none fg:#A6A6A6)[](bg:none fg:#A6A6A6)[](bg:#A6A6A6 fg:#A6A6A6)\
         $username\

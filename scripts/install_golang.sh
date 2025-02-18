@@ -1,10 +1,12 @@
 GOPATH=${HOME}/.go
 
+GO_VERSION=1.24.0
+
 # ---
 echo "Installing go"
 rm -rf $GOPATH
 mkdir -p $GOPATH
-curl -L -o $GOPATH/go.tar.gz https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
+curl -L -o $GOPATH/go.tar.gz https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz
 tar -zvxf $GOPATH/go.tar.gz -C $GOPATH 1>/dev/null
 echo $GOPATH
 mv -f $GOPATH/go/* $GOPATH/
