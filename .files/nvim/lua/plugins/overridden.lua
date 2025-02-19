@@ -9,14 +9,14 @@ return {
                     hide_dotfiles = false,
                     hide_gitignored = true,
                     hide_by_name = {
-                        '.git',
-                        '.DS_Store',
-                        'thumbs.db',
-                        'target'
+                        ".git",
+                        ".DS_Store",
+                        "thumbs.db",
+                        "target",
                     },
-                    never_show = {}
-                }
-            }
-        }
-    }
+                    never_show = {},
+                },
+            },
+        },
+    },
 }
