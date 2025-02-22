@@ -43,6 +43,13 @@ cd nerd-fonts
 ./install.sh -U ZedMono
 ./install.sh -U CommitMono
 ./install.sh -U Terminus
+./install.sh -U Agave
+./install.sh -U GeistMono 
+./install.sh -U Monaspice
+./install.sh -U ShureTechMono
+./install.sh -U RecMono
+
+
 
 sudo fc-cache -vf
 
