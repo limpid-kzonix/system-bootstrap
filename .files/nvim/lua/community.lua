@@ -8,6 +8,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.scala" },
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.docker" },
