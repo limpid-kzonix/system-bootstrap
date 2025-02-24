@@ -1,3 +1,4 @@
 {
-    "editor.fontFamily": "'MonoLisa Nerd Font Mono Regular', 'monospace', monospace"
+    "editor.fontFamily": "'Monoid Nerd Font','ComicShannsMono Nerd Font', 'FiraMono Nerd Font', monospace",
+    "editor.fontSize": 14
 }
