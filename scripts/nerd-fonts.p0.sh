@@ -48,6 +48,7 @@ cd nerd-fonts
 ./install.sh -U Monaspace
 ./install.sh -U ShareTechMono
 ./install.sh -U Recursive
+./install.sh -U D2Coding
 
 
 
