@@ -25,7 +25,7 @@ fi
 sudo dnf -y install gnome-tweaks gnome-extensions-app
 
 #others
-sudo dnf install -y llvm jq meson g++ gcc clang make cmake clangd clang-format
+sudo dnf install -y llvm jq g++ gcc clang make cmake clang clangd clang-format clang-analyzer llvm-devel clang-devel lld lldb compiler-rt clang-tools-extra
 sudo dnf install -y meson
 sudo dnf install -y flex bison gperf cmake ninja-build ccache libffi-devel openssl-devel dfu-util
 sudo dnf install -y build-essential libreadline-dev unzip
