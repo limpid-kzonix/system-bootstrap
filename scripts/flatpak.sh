@@ -27,3 +27,5 @@ flatpak install flathub org.gnome.dspy -y
 flatpak install flathub page.tesk.Refine -y
 
 flatpak install flathub org.kde.audiotube -y
+
+flatpak install flathub org.gnome.Polari -y

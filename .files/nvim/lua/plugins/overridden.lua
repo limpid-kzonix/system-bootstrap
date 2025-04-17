@@ -10,10 +10,16 @@ return {
                     hide_gitignored = true,
                     hide_by_name = {
                         '.git',
-                        '.DS_Store',
-                        'thumbs.db',
                         'target',
-                        '.venv'
+                        '.bsp',
+                        '.clangd',
+                        '.vscode',
+                        '.idea',
+                        '.cache',
+                        '.venv',
+                        '.pytest_cache',
+                        '__pycache__',
+                        '.'
                     },
                     never_show = {
                         '.git',
