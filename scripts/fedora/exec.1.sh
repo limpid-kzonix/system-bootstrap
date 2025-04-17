@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 sudo dnf -y install alacritty
+sudo dnf -y install bat
 # media
 sudo dnf -y install vlc
 sudo dnf -y install gstreamer1-plugins-{good-\*,base} gstreamer1-plugin-openh264 --exclude=gstreamer1-plugins-bad-free-devel

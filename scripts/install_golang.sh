@@ -1,6 +1,6 @@
 GOPATH=${HOME}/.go
 
-GO_VERSION=1.24.0
+GO_VERSION=1.24.2
 
 # ---
 echo "Installing go"
