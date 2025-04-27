@@ -35,3 +35,4 @@ flatpak install flathub net.nokyan.Resources -y
 flatpak install flathub io.github.mrvladus.List -y
 flatpak install flathub com.belmoussaoui.Authenticator -y
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y
+flatpak install flathub com.vscodium.codium -y
