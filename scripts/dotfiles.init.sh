@@ -25,6 +25,9 @@ ln -s $(pwd)/../.files/alacritty_theme.toml  ~/.config/alacritty/theme.toml
 rm -rf ~/.wezterm.lua
 ln -s $(pwd)/../.files/.wezterm.lua  ~/.wezterm.lua
 
+rm -rf ~/.ideavimrc
+ln -s $(pwd)/../.files/.ideavimrc ~/.ideavimrc
+
 #region: TMUX CONFIGURATION
 mkdir -p $HOME/.config/tmux
 rm -rf $HOME/.config/tmux/tmux.conf
