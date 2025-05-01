@@ -14,7 +14,7 @@ sudo zypper refresh && sudo zypper --non-interactive update
 # Install common utilities and dependencies.
 # Note: gpg2 is the typical package name for GnuPG functions in openSUSE.
 echo "Installing ca-certificates, curl, gpg2..."
-sudo zypper --non-interactive install ca-certificates curl gpg2
+sudo zypper --non-interactive install ca-certificates curl gpg2 zip
 
 # --- Install PipeWire ALSA compatibility ---
 # Needed for applications expecting ALSA to work via PipeWire.
