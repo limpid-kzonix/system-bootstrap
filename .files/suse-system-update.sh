@@ -16,7 +16,7 @@ sudo zypper update -y
 sudo zypper dist-upgrade -y
 sudo zypper patch -y
 
-flatpak update -y
+sudo flatpak update -y
 
 echo ""
 echo "Updating rust toolchain..."
