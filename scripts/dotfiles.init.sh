@@ -47,12 +47,6 @@ ln -s $(pwd)/../.files/.condarc  ~/.config/conda/.condarc
 rm -rf ~/.hidden
 ln -s $(pwd)/../.files/.hidden  ~/.hidden
 
-
-
-rm -rf ~/system-update.sh
-ln -s $(pwd)/../.files/system-update.sh ~/system-update.sh
-
-
 echo "Installing neovim..."
 
 # mv ~/.local/share/nvim ~/.local/share/nvim.bak

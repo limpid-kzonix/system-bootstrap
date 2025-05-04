@@ -1,0 +1,33 @@
+#!/bin/env zsh
+echo "Initializing user env..."
+source "$HOME/.zshrc"
+echo "\n"
+echo "## shell: $SHELL ##"
+echo "\n"
+echo "------------------------"
+echo "-  Updating system...  -"
+echo "------------------------"
+echo "System info: $(uname -a)"
+echo "\n"
+echo "Updating system via 'zypper'..."
+
+sudo zypper refresh -y
+sudo zypper update -y
+sudo zypper dist-upgrade -y
+sudo zypper patch -y
+
+flatpak update -y
+
+echo ""
+echo "Updating rust toolchain..."
+rustup update
+echo ""
+echo "Updating SDKMAN..."
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk update
+sdk upgrade
+
+echo "Updating NVM..."
+nvm install node --reinstall-packages-from=current --latest-npm
+
+

@@ -147,7 +147,7 @@ alias gtop='docker run --rm -it --name gtop --net="host" --pid="host" aksakalli/
 alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 
-alias update="$HOME/./system-update.sh"
+alias update="$HOME/system-update.sh"
 
 export PATH="$PATH:$HOME/.local/bin"
 
@@ -220,10 +220,16 @@ export PATH="$PATH:$HOME/.platformio/penv/bin"
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$PATH:$DENO_INSTALL/bin"
 
+# Override the default go path and specify a custom workspace
 export GOPATH="$HOME/.go-workspace"
 export GOCACHE="$GOPATH/pkg/cache"
 export GOMODCACHE="$GOPATH/pkg/mod"
 export PATH="$PATH:$GOPATH/bin"
+
+
+# Not all systems have this file
+[[ -d "$HOME/.nimble/bin" ]] && export PATH=$HOME/.nimble/bin:$PATH
+
 
 eval "$(starship init zsh)"
 
