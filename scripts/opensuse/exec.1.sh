@@ -56,6 +56,8 @@ sudo zypper --non-interactive install gnome-tweaks gnome-extensions
 
 # --- Development Tools ---
 echo "Installing core development tools (compilers, build systems, libs)..."
+
+sudo zypper --non-interactive install python3-pipx
 # Base development pattern
 sudo zypper --non-interactive install -t pattern devel_basis
 # Specific compilers and tools
