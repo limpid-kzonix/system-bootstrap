@@ -11,7 +11,6 @@ gext install status-icons@gnome-shell-extensions.gcampax.github.com
 gext install tilingshell@ferrarodomenico.com
 gext install user-theme@gnome-shell-extensions.gcampax.github.com
 gext install battery-indicator-icon@Deminder
-gext install just-perfection-desktop@just-perfection
 gext install notification-icons@muhammad_ans.github
 gext install tophat@fflewddur.github.io
 gext install space-bar@luchrioh
