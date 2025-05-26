@@ -35,5 +35,9 @@ flatpak install flathub io.github.mrvladus.List -y
 flatpak install flathub com.belmoussaoui.Authenticator -y 
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe -y 
 flatpak install flathub com.vscodium.codium -y 
-flatpak install flathub org.zulip.Zulip -y 
+flatpak install flathub org.zulip.Zulip -y
+
+flatpak install flathub com.github.xournalpp.xournalpp -y
+flatpak install flathub io.github.nokse22.Exhibit -y
+
 
