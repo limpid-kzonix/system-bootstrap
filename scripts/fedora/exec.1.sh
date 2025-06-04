@@ -67,7 +67,7 @@ sudo dnf install mesa-va-drivers mesa-vdpau-drivers mesa-dri-drivers mesa-filesy
 
 sudo dnf install gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm- -y
 sudo dnf install gtk3-devel -y
-sudo dnf install gtk4 gtk4-devel -y
+sudo dnf install gtk4 gtk4-devel gobject-introspection gobject-introspection-devel -y
 sudo dnf install webkit2gtk4.0-devel -y
 
 sudo dnf install texlive-base texlive-xetex -y
@@ -75,3 +75,6 @@ sudo dnf install mesa-libOSMesa -y
 
 sudo dnf install wl-clipboard -y
 sudo dnf install yq -y
+
+sudo dnf install crystal -y
+
