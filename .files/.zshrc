@@ -281,3 +281,12 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/worxbend/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
