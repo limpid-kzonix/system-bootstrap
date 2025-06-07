@@ -16,11 +16,18 @@ return {
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-
+  { import = "astrocommunity.motion.mini-move" },
+  { import = "astrocommunity.motion.mini-jump" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.jj" },
+  { import = "astrocommunity.pack.just" },
+  { import = "astrocommunity.pack.kotlin" },
+  { import = "astrocommunity.pack.crystal" },
+  { import = "astrocommunity.pack.julia" },
+  { import = "astrocommunity.pack.markdown" },
   -- import/override with your plugins folder
 }
