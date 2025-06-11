@@ -65,3 +65,11 @@ echo "Script finished."
 echo "Remember to manually add the Packman repository if needed."
 echo "Log out and log back in to use the Zsh shell with Oh My Zsh."
 echo "-----------------------------------------------------"
+
+sudo zypper install python3-pipx
+sudo zypper install 1password
+
+sudo zypper install hackrf
+sudo zypper install inspectrum
+sudo zypper install urh
+sudo zypper install jujutsu
