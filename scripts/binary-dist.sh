@@ -1,10 +1,9 @@
 #!/usr/bin/env zsh
 
-NEOVIM_VERSION=0.10.2
-LAZYGIT_VERSION=0.44.1
-KIND_VERSION=0.24.0
-NEOVIDE_VERSION=0.13.3
-ZELLIJ_VERSION=0.40.1
+LAZYGIT_VERSION=0.52.0
+KIND_VERSION=0.29.0
+NEOVIDE_VERSION=0.15.0
+ZELLIJ_VERSION=0.42.2
 
 APPS_DIR=${HOME}/.apps
 
@@ -86,8 +85,7 @@ rm -rf ${APPS_DIR}/neovide/neovide.tar.gz
 echo "Installing neovim"
 rm -rf $APPS_DIR/neovim/
 mkdir -p $APPS_DIR/neovim/bin
-curl -L -o ${APPS_DIR}/neovim/neovim.tar.gz https://github.com/neovim/neovim/releases/download/v${NEOVIM_VERSION}/nvim-linux64.tar.gz
-
+curl -L -o ${APPS_DIR}/neovim/neovim.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 tar -zvxf ${APPS_DIR}/neovim/neovim.tar.gz -C ${APPS_DIR}/neovim/ 1>/dev/null
 mv --force ${APPS_DIR}/neovim/nvim-linux64/* ${APPS_DIR}/neovim 
 chmod +x ${APPS_DIR}/neovim/bin/nvim
