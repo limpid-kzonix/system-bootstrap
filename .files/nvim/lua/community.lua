@@ -21,7 +21,6 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.motion.mini-move" },
-  { import = "astrocommunity.motion.mini-jump" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.jj" },
   { import = "astrocommunity.pack.just" },

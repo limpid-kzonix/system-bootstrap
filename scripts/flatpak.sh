@@ -44,3 +44,5 @@ flatpak install flathub org.gnome.gitlab.ilhooq.Bookup -y
 flatpak install flathub org.nickvision.money -y
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 
+flatpak install flathub be.alexandervanhee.gradia -y
+
