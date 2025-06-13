@@ -4,6 +4,7 @@ LAZYGIT_VERSION=0.52.0
 KIND_VERSION=0.29.0
 NEOVIDE_VERSION=0.15.0
 ZELLIJ_VERSION=0.42.2
+JJ_VERSION=0.30.0
 
 APPS_DIR=${HOME}/.apps
 
@@ -87,7 +88,7 @@ rm -rf $APPS_DIR/neovim/
 mkdir -p $APPS_DIR/neovim/bin
 curl -L -o ${APPS_DIR}/neovim/neovim.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 tar -zvxf ${APPS_DIR}/neovim/neovim.tar.gz -C ${APPS_DIR}/neovim/ 1>/dev/null
-mv --force ${APPS_DIR}/neovim/nvim-linux64/* ${APPS_DIR}/neovim 
+mv --force ${APPS_DIR}/neovim/nvim-linux-x86_64/* ${APPS_DIR}/neovim 
 chmod +x ${APPS_DIR}/neovim/bin/nvim
 ln -sf ${APPS_DIR}/neovim/bin/nvim ${APPS_DIR}/neovim/bin/neovim 
 ln -sf ${APPS_DIR}/neovim/bin/nvim ${APPS_DIR}/neovim/bin/vim 
@@ -98,7 +99,7 @@ sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/nvim
 
 
 rm -rf ${APPS_DIR}/neovim/neovim.tar.gz
-rm -rf ${APPS_DIR}/neovim/nvim-linux64/
+rm -rf ${APPS_DIR}/neovim/nvim-linux-x86_64/
 
 # ---
 echo "Installing lazygit"
@@ -110,5 +111,16 @@ chmod +x ${APPS_DIR}/lazygit/bin/lazygit
 ln -sf ${APPS_DIR}/lazygit/bin/lazygit ${APPS_DIR}/lazygit/bin/lzg 
 
 rm -rf ${APPS_DIR}/lazygit/lazygit.tar.gz
+
+# ---
+
+echo "Installing jujutsu"
+mkdir -p $APPS_DIR/jujutsu/bin
+curl -L -o ${APPS_DIR}/jujutsu/jj.tar.gz https://github.com/jj-vcs/jj/releases/download/v${JJ_VERSION}/jj-v${JJ_VERSION}-x86_64-unknown-linux-musl.tar.gz
+tar -zvxf ${APPS_DIR}/jujutsu/jj.tar.gz -C ${APPS_DIR}/jujutsu/bin/ 1>/dev/null
+chmod +x ${APPS_DIR}/jujutsu/bin/jj
+
+ln -sf ${APPS_DIR}/jujutsu/bin/jj ${APPS_DIR}/jujutsu/bin/jj-scm
+ln -sf ${APPS_DIR}/jujutsu/bin/jj ${APPS_DIR}/jujutsu/bin/jujutsu
 
 # ---

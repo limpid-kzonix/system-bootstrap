@@ -191,13 +191,19 @@ export PATH="$PATH:$HOME/.apps/kustomize/bin"
 export PATH="$PATH:$HOME/.apps/neovide/bin"
 # <<< neovide install directory <<<
 
+# >>> xplr install directory >>>
+export PATH="$PATH:$HOME/.apps/xplr/bin"
+# <<< xplr install directory <<<
+
+# >>> xplr install directory >>>
+export PATH="$PATH:$HOME/.apps/jujutsu/bin"
+# <<< xplr install directory <<<
+
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
 
-# >>> xplr install directory >>>
-export PATH="$PATH:$HOME/.apps/xplr/bin"
-# <<< xplr install directory <<<
+
 
 # >>> kitty install directory >>>
 export PATH="$PATH:$HOME/.local/kitty.app/bin"
