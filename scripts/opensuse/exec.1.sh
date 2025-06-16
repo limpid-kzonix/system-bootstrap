@@ -143,6 +143,8 @@ sudo zypper --non-interactive install Mesa-libOSMesa # OSMesa for off-screen ren
 sudo zypper --non-interactive install wl-clipboard # Wayland clipboard utility
 sudo zypper --non-interactive install yq # YAML processor
 
+sudo zypper install hyperfine
 echo "-----------------------------------------------------"
 echo "Script finished."
 echo "-----------------------------------------------------"
+

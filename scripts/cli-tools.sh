@@ -15,3 +15,5 @@ curl -sS https://starship.rs/install.sh | sh
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 curl -fsSL https://install.julialang.org | sh
+
+curl -fsS https://dotenvx.sh | sh
