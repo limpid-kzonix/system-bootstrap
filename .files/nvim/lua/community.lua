@@ -22,7 +22,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.pack.jj" },
   { import = "astrocommunity.pack.just" },
   { import = "astrocommunity.pack.kotlin" },
   { import = "astrocommunity.pack.crystal" },
