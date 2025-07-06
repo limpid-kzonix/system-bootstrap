@@ -13,3 +13,6 @@ cargo install du-dust -f
 cargo install gping -f
 cargo install --locked tree-sitter-cli -f
 cargo install macchina -f
+cargo install multibg-wayland -f
+cargo install bottom -f
+cargo install broot -f

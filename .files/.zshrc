@@ -146,6 +146,9 @@ alias temp='cd $(mktemp -d)'
 alias gtop='docker run --rm -it --name gtop --net="host" --pid="host" aksakalli/gtop'
 alias wezterm='flatpak run org.wezfurlong.wezterm'
 
+alias sudonvim='sudo -E XDG_CONFIG_HOME=$HOME/.config XDG_DATA_HOME=$HOME/.local/share XDG_CACHE_HOME=$HOME/.cache nvim'
+alias droidcam='XDG_RUNTIME_DIR="/run/user/$(id -u)" scrcpy --video-source=camera --camera-size=1920x1080 --v4l2-sink=/dev/video0 --no-playback'
+
 
 alias update="$HOME/system-update.sh"
 
@@ -296,3 +299,5 @@ path=('/home/worxbend/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+
+source /home/worxbend/.config/broot/launcher/bash/br

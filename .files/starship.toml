@@ -50,7 +50,6 @@ format = """
         $helm\
         $package\
         $cmake\
-        $conda\
         (↑ Package modules ↑)\
         $nix_shell\
         $env_var\
@@ -113,14 +112,6 @@ show_milliseconds = true
 show_notifications = true
 min_time_to_notify = 45_000
 format = "[ 󱫐 $duration]($style)"
-
-[conda]
-# disabled = true
-symbol = " "
-style = "bg:#a4b595 fg:#111111"
-ignore_base = false
-truncation_length = 1
-format = "[[](bg:#a4b595 fg:#A6A6A6)$symbol$environment[](bg:#A6A6A6 fg:#a4b595)]($style)"
 
 [crystal]
 # disabled = true

@@ -96,6 +96,8 @@ ln -sf ${APPS_DIR}/neovim/bin/nvim ${APPS_DIR}/neovim/bin/vim
 sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/neovim 
 sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/vim 
 sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/local/bin/nvim 
+sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/bin/nvim 
+sudo ln -sf ${APPS_DIR}/neovim/bin/nvim /usr/bin/neovim
 
 
 rm -rf ${APPS_DIR}/neovim/neovim.tar.gz

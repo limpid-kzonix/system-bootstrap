@@ -31,8 +31,7 @@ echo "Installing VAAPI/VDPAU libraries and tools..."
 # Core VAAPI/VDPAU libs
 sudo zypper --non-interactive install libva1 libva-utils libvdpau1 mpv
 # Mesa drivers provide acceleration for AMD/Intel open-source drivers
-sudo zypper --non-interactive install Mesa-dri Mesa-gallium Mesa-libva Mesa-vdpau
-# GStreamer integration
+sudo zypper --non-interactive install Mesa-dri Mesa-gallium Mesa-libva  GStreamer integration
 sudo zypper --non-interactive install gstreamer-plugins-vaapi
 # VDPAU<->VAAPI bridge
 sudo zypper --non-interactive install libvdpau_va_gl1
@@ -49,10 +48,6 @@ if lspci | grep -i intel | grep -i vga > /dev/null; then
     # intel-media-driver is often preferred for newer Intel GPUs (Gen 8+)
     sudo zypper --non-interactive install libva-intel-driver intel-gpu-tools
 fi
-
-# --- Desktop Environment Tools (GNOME) ---
-echo "Installing GNOME Tweaks and Extensions App..."
-sudo zypper --non-interactive install gnome-tweaks gnome-extensions
 
 # --- Development Tools ---
 echo "Installing core development tools (compilers, build systems, libs)..."
@@ -98,8 +93,6 @@ echo "Installing v4l2loopback and OBS Studio..."
 # v4l2loopback might require kernel headers/devel if not pre-built
 sudo zypper --non-interactive install kernel-devel # Ensure kernel headers are present for module builds
 sudo zypper --non-interactive install v4l2loopback
-# OBS Studio is best installed from Packman for full codec support
-sudo zypper --non-interactive install obs-studio
 
 # --- Multimedia Group/Pattern Update ---
 # This approximates the 'dnf groupupdate multimedia'
@@ -125,8 +118,6 @@ sudo zypper --non-interactive install kernel-firmware-all
 
 # --- Development Libraries for GUI/Graphics ---
 echo "Installing X11 and GTK development libraries..."
-# X11 libs
-sudo zypper --non-interactive install libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel xorg-x11-devel
 # GTK libs
 sudo zypper --non-interactive install gtk3-devel
 sudo zypper --non-interactive install gtk4-devel
@@ -139,7 +130,6 @@ sudo zypper --non-interactive install texlive-scheme-basic texlive-xetex
 
 # --- Other Utilities ---
 echo "Installing wl-clipboard and yq..."
-sudo zypper --non-interactive install Mesa-libOSMesa # OSMesa for off-screen rendering
 sudo zypper --non-interactive install wl-clipboard # Wayland clipboard utility
 sudo zypper --non-interactive install yq # YAML processor
 
@@ -148,3 +138,29 @@ echo "-----------------------------------------------------"
 echo "Script finished."
 echo "-----------------------------------------------------"
 
+sudo zypper in mpv
+sudo zypper in wf-recorder
+sudo zypper in wireplumber
+sudo zypper in wireplumber-devel
+sudo zypper install 1password
+sudo zypper install git
+sudo zypper install libsecret
+sudo zypper install git-credential-libsecret
+sudo zypper install curl wget
+sudo zypper install v4l2loopback
+sudo zypper install v4l2loopback-kmp-default
+sudo zypper in xdg-desktop-portal
+sudo zypper in xdg-desktop-portal xdg-desktop-portal-gtk
+sudo zypper in xdg-desktop-portal-wlr
+
+sudo zypper install fastfetch
+sudo zypper in thunar
+sudo zypper in fontawesome-fonts
+sudo zypper in papirus-icon-theme
+
+sudo zypper in kitty # Kitty is a GPU-based terminal emulator
+sudo zypper in yazi # Yazi is a terminal-based file manager 
+
+sudo zypper in 7zip zoxide
+
+sudo zypper in mupdf zathura

@@ -57,3 +57,6 @@ flatpak install flathub org.nickvision.money -y
 flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 
 
+flatpak install flathub com.bambulab.BambuStudio -y
+flatpak install flathub app.zen_browser.zen -y
+
