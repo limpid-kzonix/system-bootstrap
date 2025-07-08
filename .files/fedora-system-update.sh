@@ -22,6 +22,11 @@ flatpak update -y
 echo ""
 echo "Updating rust toolchain..."
 rustup update
+
+echo ""
+echo "Updating julia toolchain..."
+juliaup update
+
 echo ""
 echo "Updating SDKMAN..."
 source "$HOME/.sdkman/bin/sdkman-init.sh"
