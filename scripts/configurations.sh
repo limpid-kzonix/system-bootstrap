@@ -23,3 +23,4 @@ newgrp docker
 
 timedatectl set-local-rtc 0
 timedatectl set-ntp true
+

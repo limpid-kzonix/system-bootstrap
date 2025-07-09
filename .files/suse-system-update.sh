@@ -11,7 +11,7 @@ echo "System info: $(uname -a)"
 echo "\n"
 echo "Updating system via 'zypper'..."
 
-sudo zypper refresh -y
+sudo zypper refresh
 sudo zypper update -y
 sudo zypper dist-upgrade -y
 sudo zypper patch -y
@@ -25,7 +25,6 @@ rustup update
 echo ""
 echo "Updating julia toolchain..."
 juliaup update
-
 
 echo ""
 echo "Updating SDKMAN..."
