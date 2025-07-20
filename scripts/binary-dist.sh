@@ -37,7 +37,7 @@ chmod +x $APPS_DIR/kind/bin/kind
 echo "Installing zellij"
 rm -rf $APPS_DIR/zellij/
 mkdir -p $APPS_DIR/zellij/bin
-curl -Lo $APPS_DIR/zellij/zellij.tar.gz https://github.com/zellij-org/zellij/releases/download/v${ZELLIJ_VERSION}/zellij-aarch64-unknown-linux-musl.tar.gz
+curl -Lo $APPS_DIR/zellij/zellij.tar.gz https://github.com/zellij-org/zellij/releases/download/v${ZELLIJ_VERSION}/zellij-x86_64-unknown-linux-musl.tar.gz
 tar -zvxf $APPS_DIR/zellij/zellij.tar.gz -C ${APPS_DIR}/zellij/bin/ 1>/dev/null
 chmod +x $APPS_DIR/zellij/bin/zellij
 
