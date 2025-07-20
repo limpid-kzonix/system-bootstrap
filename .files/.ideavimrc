@@ -75,6 +75,4 @@ nnoremap <leader>xn :action GotoNextError<CR>
 nnoremap <leader>xp :action GotoPreviousError<CR>
 
 set clipboard^=unnamedplus
-
 set clipboard=unnamedplus
-
