@@ -60,3 +60,4 @@ flatpak install flathub io.gitlab.news_flash.NewsFlash -y
 flatpak install flathub com.bambulab.BambuStudio -y
 flatpak install flathub app.zen_browser.zen -y
 
+flatpak install flathub org.godotengine.Godot -y
