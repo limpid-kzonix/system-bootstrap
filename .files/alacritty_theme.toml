@@ -63,3 +63,5 @@ color = "#f5a97f"
 [[colors.indexed_colors]]
 index = 17
 color = "#f4dbd6"
+background = "CellForeground"
+text = "CellBackground"
