@@ -3,8 +3,8 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Default Background</name>
-    <filename>/home/worxbend/Pictures/Backgrounds/light.jpg</filename>
-    <filename-dark>/home/worxbend/Pictures/Backgrounds/dark.jpg</filename-dark>
+    <filename-dark>/home/worxbend/.system-bootstrap/assets/fedora-black-4k.png</filename-dark>
+    <filename>/home/worxbend/.system-bootstrap/assets/fedora-magenta-pink-1920x1080.png</filename>
     <options>zoom</options>
     <shade_type>solid</shade_type>
     <pcolor>#3071AE</pcolor>
