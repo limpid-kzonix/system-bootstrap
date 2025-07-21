@@ -57,3 +57,10 @@ rm -rf ~/.cache/nvim
 ln -s $(pwd)/../.files/nvim/ ~/.config/nvim
 
 echo "Installed neovim."
+
+echo "Installing Zathura configuration..."
+rm -rf ~/.config/zathura
+mkdir -p ~/.config/zathura
+ln -s $(pwd)/../.files/zathurarc ~/.config/zathura/zathurarc
+ln -s $(pwd)/../.files/zathurarc ~/.config/zathura/zathurarc.conf
+echo "Installed Zathura configuration."
