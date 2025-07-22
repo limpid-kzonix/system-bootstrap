@@ -4,12 +4,12 @@ add_newline = false
 # Order of modules on prompt
 command_timeout = 1500
 format = """ 
-[╭─](bg:none fg:#A6A6A6)[](bg:none fg:#A6A6A6)[](bg:#A6A6A6 fg:#A6A6A6)\
+[╭─](bg:none fg:#BAC2DE)[](bg:none fg:#BAC2DE)[](bg:#BAC2DE fg:#BAC2DE)\
+        $os\
         $username\
         $hostname\
         $directory\
         $time\
-        $memory_usage\
         $aws\
         $gcloud\
         $singularity\
@@ -59,18 +59,26 @@ format = """
         (↓ on input line ↓)\
         $battery\
         $shlvl\
-        $jobs\
         $cmd_duration\
-        $status[](bg:none fg:#A6A6A6)
-[╰─┈](bg:none fg:#A6A6A6)$character\
+        $status[](bg:none fg:#BAC2DE)
+[╰─┈](bg:none fg:#BAC2DE)$character\
     """
 
 # Generic prompt configurations
 [character]
-success_symbol = "[](fg:#A6A6A6)"
-error_symbol = "[](fg:#FF6E79)"
-vicmd_symbol = "[<vi>](bold fg:#FF6E79)"
+success_symbol = "[](fg:#CDD6F4)"
+error_symbol = "[](fg:#F38BA8)"
+vimcmd_visual_symbol = "[](bold fg:#F38BA8)"
+vimcmd_replace_symbol = "[](bold fg:#BAC2DE)"
 format = "$symbol "
+
+[os]
+format = "[$symbol]($style)"
+style = "bold bg:#BAC2DE fg:#318929"
+disabled = false
+
+[os.symbols]
+openSUSE = "  "
 
 [line_break]
 disabled = true
@@ -79,8 +87,8 @@ disabled = true
 [aws]
 # disabled = true
 symbol = " "
-style = "bg:#e4c180"
-format = '[[](bg:#e4c180 fg:#A6A6A6)$symbol$profile(\($region\))[](bg:#A6A6A6 fg:#e4c180)]($style)'
+style = "bg:#F9E2AF"
+format = '[[](bg:#F9E2AF fg:#BAC2DE)$symbol$profile(\($region\))[](bg:#BAC2DE fg:#F9E2AF)]($style)'
 
 [battery]
 disabled = false
@@ -89,24 +97,24 @@ charging_symbol = "󱟠"
 discharging_symbol = "󱟞"
 unknown_symbol = "󰂑"
 empty_symbol = "󰂎"
-format = "[[](bg:#DE935F fg:#A6A6A6)$symbol$percentage[](bg:#A6A6A6 fg:#DE935F)]($style)"
+format = "[[](bg:#F38BA8 fg:#BAC2DE)$symbol$percentage[](bg:#BAC2DE fg:#F38BA8)]($style)"
 [[battery.display]]
 threshold = 10
-style = "bold bg:#DE935F fg:#EEEEEE"
+style = "bold bg:#F38BA8 fg:#CDD6F4"
 [[battery.display]]
 threshold = 20
-style = "bg:#DE935F fg:#111111"
+style = "bg:#F38BA8 fg:#11111B"
 
 [cmake]
 # disabled = true
 # symbol = "卑" # alternate
 symbol = " "
-style = "bg:#57686B fg:#EEEEEE"
-format = "[[](bg:#57686B fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#57686B)]($style)"
+style = "bg:#313244 fg:#CDD6F4"
+format = "[[](bg:#313244 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#313244)]($style)"
 
 [cmd_duration]
 # disabled = true
-style = "bg:#A6A6A6 fg:#111111"
+style = "bg:#BAC2DE fg:#11111B"
 min_time = 2_000
 show_milliseconds = true
 show_notifications = true
@@ -116,25 +124,25 @@ format = "[ 󱫐 $duration]($style)"
 [crystal]
 # disabled = true
 symbol = " "
-style = "bg:#EEEEEE fg:#111111"
-format = "[[](bg:#EEEEEE fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#EEEEEE)]($style)"
+style = "bg:#F5E0DC fg:#11111B"
+format = "[[](bg:#F5E0DC fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#F5E0DC)]($style)"
 
 [dart]
 # disabled = true
 symbol = " " # original
 # symbol = "﯑ " # clearer
-style = "bg:#32BBF9 fg:#111111"
-format = "[[](bg:#32BBF9 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#32BBF9)]($style)"
+style = "bg:#89B4FA fg:#11111B"
+format = "[[](bg:#89B4FA fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#89B4FA)]($style)"
 
 [directory]
-style = "bold bg:#545B68 fg:#EEEEEE"
+style = "bold bg:#313244 fg:#CDD6F4"
 read_only = " "
-read_only_style = "bg:#FF6E79 fg:#EEEEEE"
+read_only_style = "bg:#F38BA8 fg:#CDD6F4"
 truncation_length = 4
 truncate_to_repo = true
 truncation_symbol = "…"
 fish_style_pwd_dir_length = 3
-format = "([[ ](bg:#FF6E79 fg:#A6A6A6)$read_only[ ](bg:#A6A6A6 fg:#FF6E79)]($read_only_style))[[ ](bg:#545B68 fg:#A6A6A6) $path [ ](bg:#A6A6A6 fg:#545B68)]($style)"
+format = "([[ ](bg:#F38BA8 fg:#BAC2DE)$read_only[ ](bg:#BAC2DE fg:#F38BA8)]($read_only_style))[[ ](bg:#313244 fg:#BAC2DE) $path [ ](bg:#BAC2DE fg:#313244)]($style)"
 
 [directory.substitutions]
 "~/Documents" = "󱔗 "
@@ -186,14 +194,6 @@ symbol = " " # original
 style = "bg:#3E92D2 fg:#EEEEEE"
 format = "[[](bg:#3E92D2 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#3E92D2)]($style)"
 
-[env_var]
-disabled = true
-symbol = " "
-style = "bg:#545B68 fg:#EEEEEE"
-variable = "0"
-default = "fish"
-format = "([[](bg:#545B68 fg:#A6A6A6)$symbol$env_value[](bg:#A6A6A6 fg:#545B68)]($style))"
-
 [erlang]
 # disabled = true
 symbol = " "
@@ -210,10 +210,10 @@ format = '[[](bg:#1A73E8 fg:#A6A6A6)$symbol$account(\($region\))[](bg:#A6A
 # disabled = true
 symbol = ""
 # symbol = " " # alternate
-style = "bg:#96ab5f fg:#111111"
+style = "bg:#A6E3A1 fg:#111111"
 # truncation_length = 4
 # truncation_symbol = ""
-format = "[[](bg:#96ab5f fg:#A6A6A6)  $symbol $branch [](bg:#A6A6A6 fg:#96ab5f)]($style)"
+format = "[[](bg:#A6E3A1 fg:#BAC2DE)  $symbol $branch [](bg:#BAC2DE fg:#A6E3A1)]($style)"
 
 [git_commit]
 # disabled = true
@@ -252,40 +252,33 @@ format = "([[](bg:#E0B25D fg:#A6A6A6) $stashed$staged$modified$renamed$untrac
 [golang]
 # disabled = true
 symbol = " "
-style = "bg:#7FD5EA fg:#111111"
-format = "[[](bg:#7FD5EA fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#7FD5EA)]($style)"
+style = "bg:#A6E3A1 fg:#111111"
+format = "[[](bg:#A6E3A1 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#A6E3A1)]($style)"
 
 [helm]
 # disabled = true
 symbol = "󰷀 "
-style = "bg:#0F1689 fg:#EEEEEE"
-format = "[[](bg:#0F1689 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#0F1689)]($style)"
+style = "bg:#89B4FA fg:#CDD6F4"
+format = "[[](bg:#89B4FA fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#89B4FA)]($style)"
 
 [hostname]
 # disabled = true
-style = "bg:#57686B fg:#111111"
+style = "bg:#313244 fg:#CDD6F4"
 # ssh_only = false
 trim_at = "."
-format = "[[](bg:#57686B fg:#A6A6A6)($style)$hostname[](bg:#A6A6A6 fg:#222A36)]($style)"
+format = "[[](bg:#313244 fg:#BAC2DE)($style)$hostname[](bg:#BAC2DE fg:#313244)]($style)"
 
 [java]
 # disabled = true
 symbol = " "
-style = "bg:#ED8B00 fg:#111111"
-format = "[[](bg:#ED8B00 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#ED8B00)]($style)"
-
-[jobs]
-# disabled = true
-symbol = "  "
-style = "bold bg:#A6A6A6 fg:#b4bbc8"
-# threshold = 1
-format = "[$symbol$number]($style)"
+style = "bg:#F9E2AF fg:#111111"
+format = "[[](bg:#F9E2AF fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#F9E2AF)]($style)"
 
 [julia]
 # disabled = true
 symbol = " "
-style = "bg:#4063D8 fg:#EEEEEE"
-format = "[[](bg:#4063D8 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#4063D8)]($style)"
+style = "bg:#B4BEFE fg:#11111B"
+format = "[[](bg:#B4BEFE fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#B4BEFE)]($style)"
 
 [kubernetes]
 disabled = false
@@ -293,21 +286,14 @@ symbol = " 󱃾 "
 style = "bg:#3371E3 fg:#EEEEEE"
 format = '[[](bg:#3371E3 fg:#A6A6A6)$symbol$context(\($namespace\))[](bg:#A6A6A6 fg:#3371E3)]($style)'
 
-[memory_usage]
- disabled = false
-symbol = "󰍛 "
-style = "bg:#BBBBBB fg:#111111"
-threshold = -1
-format = "([[](bg:#BBBBBB fg:#A6A6A6)$symbol$ram(:$swap)[](bg:#A6A6A6 fg:#BBBBBB)]($style))"
-
 # Mercurial
 [hg_branch]
 disabled = false
 symbol = " "
-style = "bg:#96ab5f fg:#111111"
+style = "bg:#A6E3A1 fg:#111111"
 # truncation_length = 8 # default = 2^63 - 1
 # truncation_symbol = "…"
-format = "[[](bg:#96ab5f fg:#A6A6A6)$symbol$branch[](bg:#A6A6A6 fg:#96ab5f)]($style)"
+format = "[[](bg:#A6E3A1 fg:#BAC2DE)$symbol$branch[](bg:#BAC2DE fg:#A6E3A1)]($style)"
 
 [nim]
 # disabled = true
@@ -321,49 +307,49 @@ symbol = " "
 style = "bg:#27385D fg:#EEEEEE"
 impure_msg = '[\(impure\)](bg:#27385D fg:#DE935F)'
 pure_msg = '[\(pure\)](bg:#27385D fg:#57686B)'
-format = '[[](bg:#27385D fg:#A6A6A6)$symbol$name$state[](bg:#A6A6A6 fg:#27385D)]($style)'
+format = '[[](bg:#27385D fg:#BAC2DE)$symbol$name$state[](bg:#BAC2DE fg:#27385D]($style)'
 
 [nodejs]
 # disabled = true
 symbol = "󰎙 "
 style = "bg:#005F00 fg:#EEEEEE"
-format = "[[](bg:#005F00 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#005F00)]($style)"
+format = "[[](bg:#005F00 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#005F00)]($style)"
 
 [ocaml]
 # disabled = true
 symbol = "🐫 "
 style = "bg:#F48B32 fg:#111111"
-format = "[[](bg:#F48B32 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#F48B32)]($style)"
+format = "[[](bg:#F48B32 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#F48B32)]($style)"
 
 [package]
 # disabled = true
 symbol = "󰏗 "
 style = "bg:#545B68 fg:#EEEEEE"
 display_private = false
-format = "[[](bg:#545B68 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#545B68)]($style)"
+format = "[[](bg:#545B68 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#545B68)]($style)"
 
 [scala]
 symbol = ' '
-style = "bg:#f43434 fg:#333333 bold"
-format = "[[](bg:#f43434 fg:#A6A6A6) $symbol$version [](bg:#A6A6A6 fg:#f43434)]($style)"
+style = "bg:#F38BA8 fg:#333333 bold"
+format = "[[](bg:#F38BA8 fg:#BAC2DE) $symbol$version [](bg:#BAC2DE fg:#F38BA8)]($style)"
 
 [perl]
 # disabled = true
 symbol = " "
 style = "bg:#0073A1 fg:#EEEEEE"
-format = "[[](bg:#0073A1 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#0073A1)]($style)"
+format = "[[](bg:#0073A1 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#0073A1)]($style)"
 
 [php]
 # disabled = true
 symbol = " "
 style = "bg:#8892BF fg:#EEEEEE"
-format = "[[](bg:#8892BF fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#8892BF)]($style)"
+format = "[[](bg:#8892BF fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#8892BF)]($style)"
 
 [purescript]
 # disabled = true
 symbol = "  "
 style = "bg:#1D222D fg:#EEEEEE"
-format = "[[](bg:#1D222D fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#1D222D)]($style)"
+format = "[[](bg:#1D222D fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#1D222D)]($style)"
 
 [python]
 # disabled = true
@@ -372,26 +358,26 @@ style = "bg:#EBD45B fg:#111111"
 # pyenv_version_name = true
 pyenv_prefix = "pyenv "
 python_binary = "python3"
-format = '[[](bg:#EBD45B fg:#A6A6A6)$symbol$pyenv_prefix$version(\($virtualenv\))[](bg:#A6A6A6 fg:#EBD45B)]($style)'
+format = '[[](bg:#EBD45B fg:#BAC2DE)$symbol$pyenv_prefix$version(\($virtualenv\))[](bg:#BAC2DE fg:#EBD45B)]($style)'
 
 [ruby]
 # disabled = true
 symbol = " "
 # symbol = " " # alternate
 style = "bg:#CC342D fg:#EEEEEE"
-format = "[[](bg:#CC342D fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#CC342D)]($style)"
+format = "[[](bg:#CC342D fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#CC342D)]($style)"
 
 [rust]
 # disabled = true
 symbol = " "
 # symbol = " " # alternate
 style = "bg:#A72145 fg:#EEEEEE"
-format = "[[](bg:#A72145 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#A72145)]($style)"
+format = "[[](bg:#A72145 fg:#BAC2DE)$symbol$version[](bg:#BAC2DE fg:#A72145)]($style)"
 
 [shlvl]
 # disabled = false
 symbol = ""
-style = "bold bg:#A6A6A6 fg:#d7bd8d"
+style = "bold bg:#A6ADC8 fg:#d7bd8d"
 threshold = 2
 format = "[$symbol$shlvl]($style)"
 
@@ -410,7 +396,7 @@ format = "[[](bg:#F05138 fg:#A6A6A6)$symbol$version[](bg:#A6A6A6 fg:#F0513
 [status]
 # disabled = false
 symbol = ""
-style = "bg:#A6A6A6 fg:#FF6E79"
+style = "bg:#A6ADC8 fg:#F38BA8"
 format = "[$symbol$status]($style)"
 
 [terraform]
@@ -422,21 +408,15 @@ format = '[[](bg:#5836CD fg:#A6A6A6)$symbol\($workspace\)[](bg:#A6A6A6 fg:
 # format = "[[](bg:#5836CD fg:#A6A6A6)$symbol$version($workspace)[](bg:#A6A6A6 fg:#5836CD)]($style)"
 
 [time]
-disabled = false
-### color is set to orange, because of the configured time_range--to get your attention for e. g. R&R time ;)
-style = "bg:#b4bbc8 fg:#111111"
-use_12hr = false
-time_format = "%H:%M"
-utc_time_offset = "local"
-time_range = "20:00:00-06:00:00"
-format = "[[](bg:#b4bbc8 fg:#A6A6A6) $time[](bg:#A6A6A6 fg:#b4bbc8)]($style)"
+style = "bg:#BAC2DE fg:#11111B"
+format = "[[](bg:#BAC2DE fg:#A6ADC8) $time[](bg:#A6ADC8 fg:#BAC2DE)]($style)"
 
 [username]
 # disabled = true
 show_always = true
-style_root = "bold bg:#728da8 fg:#DE935F"
-style_user = "bg:#728da8 fg:#222A36"
-format = "[[ ](bg:#728da8 fg:#A6A6A6)$user[ ](bg:#A6A6A6 fg:#728da8)]($style)"
+style_root = "bold bg:#313244 fg:#F38BA8"
+style_user = "bg:#313244 fg:#BAC2DE"
+format = "[[ ](bg:#313244 fg:#BAC2DE)$user [ ](bg:#BAC2DE fg:#313244)]($style)"
 
 [zig]
 # disabled = true
