@@ -60,7 +60,9 @@ format = """
         $battery\
         $shlvl\
         $cmd_duration\
-        $status[](bg:none fg:#BAC2DE)
+        $status\
+        [  ](bg:#BAC2DE fg:#BAC2DE)\
+        [ ](bg:none fg:#BAC2DE)
 [╰─┈](bg:none fg:#BAC2DE)$character\
     """
 
@@ -70,15 +72,16 @@ success_symbol = "[](fg:#CDD6F4)"
 error_symbol = "[](fg:#F38BA8)"
 vimcmd_visual_symbol = "[](bold fg:#F38BA8)"
 vimcmd_replace_symbol = "[](bold fg:#BAC2DE)"
-format = "$symbol "
+format = "$symbol  "
 
 [os]
 format = "[$symbol]($style)"
-style = "bold bg:#BAC2DE fg:#318929"
+style = "bold"
 disabled = false
 
 [os.symbols]
-openSUSE = "  "
+openSUSE = "[  ](bg:#BAC2DE fg:#318929)"
+Fedora = "[ ](bg:#BAC2DE fg:#1e66f5)"
 
 [line_break]
 disabled = true
