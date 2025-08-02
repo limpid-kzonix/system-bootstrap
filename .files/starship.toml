@@ -11,7 +11,7 @@ format = """
         $directory\
         $time\
         $aws\
-        $gcloud\
+$gcloud\
         $singularity\
         $kubernetes\
         $docker_context\
@@ -33,6 +33,7 @@ format = """
         $java\
         $scala\
         $julia\
+        $lua\
         $nim\
         $nodejs\
         $ocaml\
@@ -40,6 +41,7 @@ format = """
         $php\
         $purescript\
         $python\
+        $conda\
         $ruby\
         $rust\
         $swift\
@@ -73,6 +75,14 @@ error_symbol = "[](fg:#F38BA8)"
 vimcmd_visual_symbol = "[](bold fg:#F38BA8)"
 vimcmd_replace_symbol = "[](bold fg:#BAC2DE)"
 format = "$symbol  "
+
+[conda]
+style = "bg:#BAC2DE fg:#318929"
+format = '[$symbol]($style)[$environment](bold bg:#BAC2DE fg:#313244)'
+ignore_base = false
+
+[lua]
+style = "bg:#BAC2DE fg:#F9E2AF"
 
 [os]
 format = "[$symbol]($style)"
