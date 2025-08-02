@@ -61,3 +61,4 @@ flatpak install flathub app.zen_browser.zen -y
 
 flatpak install flathub org.godotengine.Godot -y
 flatpak install flathub io.github.hrkfdn.ncspot -y
+flatpak install flathub io.github.diegopvlk.Dosage -y
