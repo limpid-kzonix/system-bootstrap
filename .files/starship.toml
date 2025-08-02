@@ -6,12 +6,12 @@ command_timeout = 1500
 format = """ 
 [╭─](bg:none fg:#BAC2DE)[](bg:none fg:#BAC2DE)[](bg:#BAC2DE fg:#BAC2DE)\
         $os\
+        $sudo\
         $username\
         $hostname\
         $directory\
         $time\
         $aws\
-$gcloud\
         $singularity\
         $kubernetes\
         $docker_context\
