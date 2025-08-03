@@ -257,6 +257,14 @@ if [[ $WITH_TMUX = true ]]; then
     fi
 fi
 
+if [[ -n "$KITTY_WINDOW_ID" ]]; then 
+	if [[ $WITH_ZELLIJ == true ]]; then
+		export ZELLIJ_AUTO_ATTACH=true
+		export ZELLIJ_AUTO_EXIT=true
+		eval "$(zellij setup --generate-auto-start zsh)"
+	fi
+fi
+
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 export NVM_DIR="$HOME/.nvm"

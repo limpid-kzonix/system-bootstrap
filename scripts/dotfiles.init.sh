@@ -64,3 +64,12 @@ mkdir -p ~/.config/zathura
 ln -s $(pwd)/../.files/zathurarc ~/.config/zathura/zathurarc
 ln -s $(pwd)/../.files/zathurarc ~/.config/zathura/zathurarc.conf
 echo "Installed Zathura configuration."
+
+
+echo "Installing the Zellij configuration"
+rm -rf ~/.config/zellij
+mkdir -p ~/.config/zellij/layouts
+ln -s $(pwd)/../.files/zellij/config.kdl ~/.config/zellij/config.kdl
+ln -s $(pwd)/../.files/zellij/layouts/editor.kdl ~/.config/zellij/layouts/editor.kdl
+ln -s $(pwd)/../.files/zellij/layouts/media.kdl ~/.config/zellij/layouts/media.kdl
+echo "Installed Zellij configuration."echo "Installed the Zellij configuration"
