@@ -62,3 +62,7 @@ flatpak install flathub app.zen_browser.zen -y
 flatpak install flathub org.godotengine.Godot -y
 flatpak install flathub io.github.hrkfdn.ncspot -y
 flatpak install flathub io.github.diegopvlk.Dosage -y
+
+flatpak install flathub io.github.swordpuffin.rewaita -y
+flatpak install flathub org.librecad.librecad -y
+flatpak install flathub org.gnome.design.Emblem -y
