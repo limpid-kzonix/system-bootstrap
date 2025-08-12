@@ -53,6 +53,7 @@ flatpak install flathub org.gnome.Polari -y
 flatpak install flathub org.gnome.dspy -y
 flatpak install flathub io.github.swordpuffin.rewaita -y
 flatpak install flathub org.gnome.design.Emblem -y
+flatpak install flathub org.mozilla.vpn -y
 
 # ===================== DevTools =====================
 flatpak install flathub rest.insomnia.Insomnia -y
