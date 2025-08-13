@@ -16,7 +16,15 @@ return {
 
         -- install formatters
         "stylua",
-
+        "shellcheck",
+        "editorconfig-checker",
+        "shfmt",
+        "ruff",
+        "ruff-lsp",
+        "pyrefly",
+        "black",
+        "flake8",
+        "isort",
         -- install debuggers
         "debugpy",
 

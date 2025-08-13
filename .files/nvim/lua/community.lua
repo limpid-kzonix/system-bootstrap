@@ -14,7 +14,7 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.helm" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.json" },
@@ -27,5 +27,11 @@ return {
   { import = "astrocommunity.pack.crystal" },
   { import = "astrocommunity.pack.julia" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.debugging.nvim-dap-view" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+  { import = "astrocommunity.completion.blink-cmp" },
   -- import/override with your plugins folder
 }
