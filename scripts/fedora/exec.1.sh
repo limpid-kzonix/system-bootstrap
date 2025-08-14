@@ -78,6 +78,8 @@ sudo dnf install yq -y
 
 sudo dnf install crystal -y
 
-sudo dnf install kitty -
+sudo dnf install kitty -y
 
-sudo dnf install hyperfine
+sudo dnf install hyperfine -y
+
+sudo dnf install asciinema -y
