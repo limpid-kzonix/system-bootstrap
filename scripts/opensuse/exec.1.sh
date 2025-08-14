@@ -164,3 +164,4 @@ sudo zypper in yazi # Yazi is a terminal-based file manager
 sudo zypper in 7zip zoxide
 
 sudo zypper in mupdf zathura
+sudo zypper install asciinema
