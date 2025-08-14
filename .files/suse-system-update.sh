@@ -35,4 +35,11 @@ sdk upgrade
 echo "Updating NVM..."
 nvm install node --reinstall-packages-from=current --latest-npm
 
+echo "Updating Miniforge3"
+mamba update --all
+
+echo "Updating astral.uv"
+uv self update
+
+
 
