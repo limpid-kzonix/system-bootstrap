@@ -17,6 +17,7 @@ flatpak install flathub com.spotify.Client -y
 flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.kde.audiotube -y
 flatpak install flathub io.github.hrkfdn.ncspot -y
+flatpak install flathub org.gnome.Decibels -y
 
 # ===================== Video & Graphics Creation =====================
 flatpak install flathub org.kde.kdenlive -y
@@ -54,6 +55,10 @@ flatpak install flathub org.gnome.dspy -y
 flatpak install flathub io.github.swordpuffin.rewaita -y
 flatpak install flathub org.gnome.design.Emblem -y
 flatpak install flathub org.mozilla.vpn -y
+
+# ===================== Productivity Tools =================
+flatpak install flathub com.pojtinger.felicitas.Sessions -y
+flatpak install flathub com.rafaelmardojai.Blanket -y
 
 # ===================== DevTools =====================
 flatpak install flathub rest.insomnia.Insomnia -y
