@@ -18,6 +18,8 @@ flatpak install flathub org.audacityteam.Audacity -y
 flatpak install flathub org.kde.audiotube -y
 flatpak install flathub io.github.hrkfdn.ncspot -y
 flatpak install flathub org.gnome.Decibels -y
+flatpak install flathub io.bassi.Amberol -y
+flatpak install flathub com.github.neithern.g4music -y
 
 # ===================== Video & Graphics Creation =====================
 flatpak install flathub org.kde.kdenlive -y
