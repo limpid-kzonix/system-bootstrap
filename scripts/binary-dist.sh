@@ -5,6 +5,7 @@ KIND_VERSION=0.29.0
 NEOVIDE_VERSION=0.15.1
 ZELLIJ_VERSION=0.43.1
 JJ_VERSION=0.32.0
+DOTBOT_VERSION=1.23.1
 
 APPS_DIR=${HOME}/.apps
 
@@ -126,3 +127,12 @@ ln -sf ${APPS_DIR}/jujutsu/bin/jj ${APPS_DIR}/jujutsu/bin/jj-scm
 ln -sf ${APPS_DIR}/jujutsu/bin/jj ${APPS_DIR}/jujutsu/bin/jujutsu
 
 # ---
+
+echo "Installing dotbot"
+rm -rf $APPS_DIR/dotbot/
+mkdir -p $APPS_DIR/dotbot/bin
+curl -L -o ${APPS_DIR}/dotbot/dotbot.tar.gz https://github.com/anishathalye/dotbot/releases/download/v${DOTBOT_VERSION}/dotbot-linux-x64.tar.gz
+tar -zvxf ${APPS_DIR}/dotbot/dotbot.tar.gz -C ${APPS_DIR}/dotbot/bin/ 1>/dev/null
+chmod +x ${APPS_DIR}/dotbot/bin/dotbot
+
+rm -rf ${APPS_DIR}/dotbot/dotbot.tar.gz
