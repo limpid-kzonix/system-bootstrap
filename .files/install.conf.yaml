@@ -23,20 +23,23 @@
     - rm -rf ~/.config/nvim
     - rm -rf ~/.config/alacritty
     - mkdir -p ~/.config/alacritty/
+    - rm -rf ~/.config/lazygit
+    - mkdir -p ~/.config/lazygit/
 
 - link:
-    ~/.tmux.conf: .files/.tmux.conf
-    ~/.zshrc: .files/.zshrc
-    ~/.ideavimrc: .files/.ideavimrc
-    ~/.wezterm.lua: .files/.wezterm.lua
-    ~/.config/starship.toml: .files/starship.toml
-    ~/.config/alacritty/alacritty.toml: .files/alacritty.toml
-    ~/.config/alacritty/theme.toml: .files/alacritty_theme.toml
-    ~/.config/kitty/kitty.conf: .files/kitty.conf
-    ~/.hidden: .files/.hidden
-    ~/.config/nvim: .files/nvim
-    ~/.config/zathura/zathurarc: .files/zathurarc
-    ~/.config/zellij/config.kdl: .files/.config/zellij/config.kdl
-    ~/.config/zellij/layouts/default.kdl: .files/.config/zellij/layouts/default.kdl
-    ~/.config/zellij/layouts/editor.kdl: .files/.config/zellij/layouts/editor.kdl
-    ~/.config/zellij/layouts/media.kdl: .files/.config/zellij/layouts/media.kdl
+    ~/.tmux.conf: .tmux.conf
+    ~/.zshrc: .zshrc
+    ~/.ideavimrc: .ideavimrc
+    ~/.wezterm.lua: .wezterm.lua
+    ~/.config/starship.toml: starship.toml
+    ~/.config/alacritty/alacritty.toml: alacritty.toml
+    ~/.config/alacritty/theme.toml: alacritty_theme.toml
+    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.hidden: .hidden
+    ~/.config/nvim: nvim
+    ~/.config/zathura/zathurarc: zathurarc
+    ~/.config/zellij/config.kdl: .config/zellij/config.kdl
+    ~/.config/zellij/layouts/default.kdl: .config/zellij/layouts/default.kdl
+    ~/.config/zellij/layouts/editor.kdl: .config/zellij/layouts/editor.kdl
+    ~/.config/zellij/layouts/media.kdl: .config/zellij/layouts/media.kdl
+    ~/.config/lazygit/config.yml: .config/lazygit/config.yml

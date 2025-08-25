@@ -136,3 +136,4 @@ tar -zvxf ${APPS_DIR}/dotbot/dotbot.tar.gz -C ${APPS_DIR}/dotbot/bin/ 1>/dev/nul
 chmod +x ${APPS_DIR}/dotbot/bin/dotbot
 
 rm -rf ${APPS_DIR}/dotbot/dotbot.tar.gz
+
