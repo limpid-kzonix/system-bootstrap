@@ -27,7 +27,6 @@ sudo zypper --non-interactive install pipewire-alsa
 echo "Ensuring util-linux is installed..."
 sudo zypper --non-interactive install util-linux
 
-
 sudo zypper install opi
 opi codecs
 
@@ -52,12 +51,12 @@ chsh -s $(which zsh)
 # This downloads and executes the official installer script.
 echo "Installing Oh My Zsh..."
 if command -v curl >/dev/null 2>&1; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 elif command -v wget >/dev/null 2>&1; then
-  sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 else
-  echo "Error: curl or wget is required to install Oh My Zsh." >&2
-  exit 1
+	echo "Error: curl or wget is required to install Oh My Zsh." >&2
+	exit 1
 fi
 
 echo "-----------------------------------------------------"
@@ -73,3 +72,4 @@ sudo zypper install hackrf
 sudo zypper install inspectrum
 sudo zypper install urh
 sudo zypper install jujutsu
+sudo zypper install sddm-qt6
