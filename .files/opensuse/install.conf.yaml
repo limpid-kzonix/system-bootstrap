@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      relink: true
+- clean: ["~"]
+
+- clean:
+    ~/.config:
+      recursive: true
+
+- shell:
+    - rm -rf ~/.config/sway
+    - rm -rf ~/.config/waybar
+    - rm -rf ~/.config/fuzzel
+    - rm -rf ~/.config/kanshi
+    - rm -rf ~/.config/swaylock
+    - rm -rf ~/.config/swaync
+    - rm -rf ~/.config/wob
+- link:
+    ~/.config/sway: .config/sway
+    ~/.config/waybar: .config/waybar
+    ~/.config/fuzzel: .config/fuzzel
+    ~/.config/kanshi: .config/kanshi
+    ~/.config/swaylock: .config/swaylock
+    ~/.config/swaync: .config/swaync
+    ~/.config/wob: .config/wob

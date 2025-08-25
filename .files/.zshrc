@@ -75,19 +75,17 @@ plugins=(
 	git 
 	vscode 
 	yarn 
-	ubuntu 
 	tmux 
 	systemd 
 	sudo 
-	sublime 
-	sublime-merge 
 	sdk 
 	scala 
 	sbt 
 	rust 
 	python 
-	pylint 
 	pip 
+	pyenv
+  conda
 	nvm 
 	npm 
 	node 

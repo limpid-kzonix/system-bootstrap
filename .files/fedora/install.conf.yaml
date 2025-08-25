@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+- clean: ["~"]
+
+- clean:
+    ~/.config:
+      recursive: true
+- shell:
+    - rm -rf ~/Pictures/Backgrounds
+    - mkdir -p ~/Pictures/Backgrounds
+    - mkdir -p ~/.local/share/gnome-background-properties
+- link:
+    ~/.local/share/gnome-background-properties/adwaita.xml.in: ../.files/gnome-background-properties.xml
+    ~/Pictures/Backgrounds: ../../assets/Backgrounds
+
+- shell:
+    - for i in {1..9}; do; gsettings set org.gnome.shell.keybindings switch-to-application-$i "[]"; done
+    - for i in {1..9}; do; gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['<Super>$i']"; done
