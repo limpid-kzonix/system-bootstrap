@@ -79,7 +79,7 @@
     "disable-scroll": true,
     "sort-by-number": true,
     "all-outputs": false,
-    "format": "{name}:{icon}",
+    "format": "{icon}",
     "format-icons": {
       "1": "",
       "2": "",
