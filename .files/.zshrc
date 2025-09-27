@@ -209,8 +209,6 @@ export PATH="$PATH:$HOME/.apps/jujutsu/bin"
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
 
-
-
 # >>> kitty install directory >>>
 export PATH="$PATH:$HOME/.local/kitty.app/bin"
 # <<< kitty install directory <<<
@@ -337,3 +335,4 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+. "$HOME/.local/bin/env"
