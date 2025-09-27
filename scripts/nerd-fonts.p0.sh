@@ -53,7 +53,7 @@ cd nerd-fonts
 ./install.sh -U EnvyCodeR
 ./install.sh -U IosevkaTerm
 ./install.sh -U Lekton
-
+./install.sh -U Lilex
 
 sudo fc-cache -vf
 
