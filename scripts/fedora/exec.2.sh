@@ -8,7 +8,6 @@ sudo dnf -y install code
 
 sudo dnf -y install podman
 sudo dnf -y install podman-docker
-sudo dnf -y install docker-compose-plugin
 
 timedatectl set-local-rtc 0
 timedatectl set-ntp true
