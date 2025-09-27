@@ -8,10 +8,9 @@
       recursive: true
 - shell:
     - rm -rf ~/Pictures/Backgrounds
-    - mkdir -p ~/Pictures/Backgrounds
     - mkdir -p ~/.local/share/gnome-background-properties
 - link:
-    ~/.local/share/gnome-background-properties/adwaita.xml.in: ../.files/gnome-background-properties.xml
+    ~/.local/share/gnome-background-properties/adwaita.xml.in: ../gnome-background-properties.xml
     ~/Pictures/Backgrounds: ../../assets/Backgrounds
 
 - shell:
