@@ -49,7 +49,10 @@ cd nerd-fonts
 ./install.sh -U ShareTechMono
 ./install.sh -U Recursive
 ./install.sh -U D2Coding
-
+./install.sh -U ZedMono
+./install.sh -U EnvyCodeR
+./install.sh -U IosevkaTerm
+./install.sh -U Lekton
 
 
 sudo fc-cache -vf
