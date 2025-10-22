@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Update system
+sudo pacman -Syu --noconfirm
+
+sudo pacman -S --noconfirm gnome-keyring seahorse pam pambase
+
+# Install base packages from official repos
+sudo pacman -S --noconfirm \
+	ca-certificates \
+	curl \
+	gnupg \
+	wget \
+	git \
+	fuse3 \
+	util-linux \
+	zsh \
+	fzf \
+	pipewire-alsa
+
+# Change default shell to zsh
+chsh -s $(which zsh)
+
+# Install Oh My Zsh
+if [ ! -d "${ZSH:-$HOME/.oh-my-zsh}" ]; then
+	echo "Installing Oh My Zsh..."
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+	echo "Oh My Zsh already installed."
+fi
