@@ -82,4 +82,4 @@ sudo dnf install kitty -y
 
 sudo dnf install hyperfine -y
 
-sudo dnf install asciinema gdu fastfetch -y 
+sudo dnf install asciinema gdu fastfetch libsecret libsecret-devel libgnome-keyring -y
