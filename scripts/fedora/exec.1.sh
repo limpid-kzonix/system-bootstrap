@@ -82,4 +82,4 @@ sudo dnf install kitty -y
 
 sudo dnf install hyperfine -y
 
-sudo dnf install asciinema gdu -y 
+sudo dnf install asciinema gdu fastfetch -y 
