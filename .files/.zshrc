@@ -205,6 +205,10 @@ export PATH="$PATH:$HOME/.apps/xplr/bin"
 export PATH="$PATH:$HOME/.apps/jujutsu/bin"
 # <<< xplr install directory <<<
 
+# >>> zig install directory >>>
+export PATH="$PATH:$HOME/.apps/zig/bin"
+# <<< zig install directory <<<
+ 
 # >>> coursier install directory >>>
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
 # <<< coursier install directory <<<
