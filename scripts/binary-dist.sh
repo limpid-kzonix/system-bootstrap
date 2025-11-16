@@ -6,10 +6,20 @@ NEOVIDE_VERSION=0.15.1
 ZELLIJ_VERSION=0.43.1
 JJ_VERSION=0.32.0
 DOTBOT_VERSION=1.23.1
-
+ZIG_VERSION=0.15.2
 APPS_DIR=${HOME}/.apps
 
 mkdir -p $APPS_DIR
+
+# ---
+echo "Installing zig"
+rm -rf $APPS_DIR/zig/
+mkdir -p $APPS_DIR/zig/bin
+curl -L -o ${APPS_DIR}/zig/zig.tar.xz https://ziglang.org/download/${ZIG_VERSION}/zig-x86_64-linux-${ZIG_VERSION}.tar.xz
+tar -xvf ${APPS_DIR}/zig/zig.tar.xz -C ${APPS_DIR}/zig/bin/ 1>/dev/null
+ln -s ${APPS_DIR}/zig/bin/zig-x86_64-*/zig ${APPS_DIR}/zig/bin/zig
+chmod +x ${APPS_DIR}/zig/bin/zig
+rm -rf ${APPS_DIR}/zig/zig.tar.xz
 
 # ---
 echo "Installing minikube"

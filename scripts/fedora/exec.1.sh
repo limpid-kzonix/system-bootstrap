@@ -26,7 +26,7 @@ fi
 sudo dnf -y install gnome-tweaks gnome-extensions-app
 sudo dnf -y install pipx
 #others
-sudo dnf install -y llvm jq g++ gcc clang make cmake clang clangd clang-format clang-analyzer llvm-devel clang-devel lld lldb compiler-rt clang-tools-extra
+sudo dnf install -y llvm jq g++ gcc make readline-devel clang make cmake clang clangd clang-format clang-analyzer llvm-devel clang-devel lld lldb compiler-rt clang-tools-extra
 sudo dnf install -y meson
 sudo dnf install -y flex bison gperf cmake ninja-build ccache libffi-devel openssl-devel dfu-util
 sudo dnf install -y build-essential libreadline-dev unzip
@@ -82,4 +82,4 @@ sudo dnf install kitty -y
 
 sudo dnf install hyperfine -y
 
-sudo dnf install asciinema -y
+sudo dnf install asciinema gdu -y 
