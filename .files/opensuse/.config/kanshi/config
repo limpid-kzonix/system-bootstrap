@@ -1,18 +1,18 @@
 profile dual {
 	output HDMI-A-2 mode 2560x1440@119.998 position 0,0 scale_filter linear enable
-        output DP-1 mode 3840x2160 position 2560,0 transform 90 scale_filter linear enable 
+        output DP-2 mode 3840x2160 position 2560,0 transform 90 scale_filter linear enable 
 }
 
 profile main {
-        output DP-1 mode 3840x2160 position 0,0 scale_filter linear transform 90 enable
+        output DP-2 mode 3840x2160 position 0,0 scale_filter linear transform 90 enable
         output HDMI-A-2 disable
 }
 
 profile secondary {
 	output HDMI-A-2 mode 2560x1440@119.998 position 0,0 scale_filter linear enable
-	output DP-1 disable
+	output DP-2 disable
 }
 
 profile main-only {
-        output DP-1 mode 3840x2160 position 0,0 transform 90 scale_filter linear enable
+        output DP-2 mode 3840x2160 position 0,0 transform 90 scale_filter linear enable
 }

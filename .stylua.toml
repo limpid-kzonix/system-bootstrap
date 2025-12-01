@@ -4,3 +4,78 @@ indent_type = "Spaces"
 indent_width = 4
 quote_style = "AutoPreferDouble"
 call_parentheses = "Always"
+
+[sort_requires]
+enabled = true
+
+[sort_imports]
+enabled = true
+
+[sort_builtins]
+enabled = true
+
+[sort_members]
+enabled = true
+
+[no_call_parentheses]
+enabled = true
+
+[no_compact]
+enabled = true
+
+# The example of the stylua.toml file
+# https://github.com/JohnnyMorganz/StyLua/blob/master/examples/stylua.toml
+
+# column_width = 120 # default: 80
+# line_endings = "Unix" # default: "Windows"
+# indent_type = "Tabs" # default: "Spaces"
+# indent_width = 4 # default: 2
+# quote_style = "AutoPreferDouble" # default: "AutoPreferSingle"
+# no_call_parentheses = false # default: false
+# no_concat_with_spaces = false # default: false
+# operator_padding = "None" # default: "None"
+# indent_call_chain = false # default: false
+# allman = false # default: false
+# trailing_comma = "None" # default: "None"
+# force_multiline = false # default: false
+# table_separator = "None" # default: "None"
+# space_before_function_call = false # default: false
+# space_before_function_definition = false # default: false
+# space_before_if_parentheses = false # default: false
+# space_before_while_parentheses = false # default: false
+# space_before_for_parentheses = false # default: false
+# space_before_try_parentheses = false # default: false
+# space_before_catch_parentheses = false # default: false
+# space_before_else_parentheses = false # default: false
+# space_before_while_in_do = false # default: false
+# space_before_in_parentheses = false # default: false
+# space_before_table_open_bracket = false # default: false
+# space_before_extending_comma = false # default: false
+# space_after_comma = false # default: true
+# space_before_comma = false # default: false
+# space_after_comma_in_table = false # default: true
+# space_before_comma_in_table = false # default: false
+# space_before_dot = false # default: false
+# space_after_dot = false # default: false
+# space_after_semicolon = false # default: true
+# space_after_type_cast = false # default: true
+# space_before_function_open_paren = false # default: false
+# space_before_function_comma = false # default: false
+# space_after_function_comma = false # default: true
+# space_before_function_call_comma = false # default: false
+# space_before_function_args = false # default: false
+# space_around_function_args = false # default: false
+# space_between_function_args = false # default: false
+# space_before_function_body = false # default: false
+# keep_simple_control_block_one_line = false # default: false
+# keep_simple_function_one_line = false # default: false
+# keep_simple_if                     = false # default: false
+# keep_simple_while                  = false # default: false
+# keep_simple_do_while               = false # default: false
+# keep_simple_for                    = false # default: false
+# keep_simple_forfrom                = false # default: false
+# keep_simple_do                      = false # default: false
+# keep_simple_while                   = false # default: false
+# keep_simple_repeat                  = false # default: false
+# keep_simple_do                       = false # default: false
+# keep_simple_do                       = false # default: false
